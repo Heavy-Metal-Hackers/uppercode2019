@@ -1,0 +1,23 @@
+<div class="pull-right text-right" style="display: inline-block;">
+  <%%= link_to t('activerecord.link.edit'), edit_<%= singular_table_name %>_path(@<%= singular_table_name %>) if can? :edit, @<%= singular_table_name %> %>
+  |
+  <%%= link_to t('activerecord.link.back_to_list'), <%= table_name %>_path %>
+</div>
+<h3 style="margin-top: 0px; "><%%= t('activerecord.models.<%= singular_table_name %>.one') + ' ' + t('activerecord.link.details') %></h3>
+<table class="table table-show">
+  <%- attributes.each do |attribute| -%>
+  <tr>
+    <th><%%= t('activerecord.attributes.<%= singular_table_name %>.<%= attribute.name %>') %></th>
+    <td><%%= @<%= singular_table_name %>.<%= attribute.name %> %></td>
+  </tr>
+  <%- end -%>
+  <tr>
+    <th><%%= t('activerecord.attributes.<%= singular_table_name %>.created_at') %></th>
+    <td><%%= @<%= singular_table_name %>.created_at %></td>
+  </tr>
+  <tr>
+    <th><%%= t('activerecord.attributes.<%= singular_table_name %>.updated_at') %></th>
+    <td><%%= @<%= singular_table_name %>.updated_at %></td>
+  </tr>
+
+</table>

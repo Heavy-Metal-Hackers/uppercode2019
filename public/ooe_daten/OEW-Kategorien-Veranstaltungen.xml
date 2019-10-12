@@ -1,0 +1,99 @@
+<Categories Type="2">
+  <Category Name="Ausstellung" Level="1">
+    <Category Name="Kunstausstellung" schemaorg="ExhibitionEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Kunstmesse" schemaorg="ExhibitionEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Thematische Ausstellung" schemaorg="ExhibitionEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+  </Category>
+  <Category Name="Brauchtumsveranstaltung" Level="1">
+    <Category Name="Adventmarkt" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Almabtrieb, Almfest" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Fasching" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Heimat-, Brauchtumsabend" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Osterveranstaltung" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Weihnachts-, Adventveranstaltung" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Sonstige Brauchtumsveranstaltung" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+  </Category>
+  <Category Name="Kabarett" schemaorg="ComedyEvent" Level="1" />
+  <Category Name="Kulinarisches" Level="1">
+    <Category Name="Bierfest" schemaorg="FoodEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Brunch" schemaorg="FoodEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Degustation, Verkostung" schemaorg="FoodEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Kochshow" schemaorg="FoodEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Kulinarisches Fest" schemaorg="FoodEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Mostkost, Mostfest" schemaorg="FoodEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Spezialitätenwoche" schemaorg="FoodEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="regionaltypisches kulinarisches Fest" schemaorg="FoodEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Weinfest" schemaorg="FoodEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Diverses Kulinarisches" schemaorg="FoodEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+  </Category>
+  <Category Name="Kurs" Level="1">
+    <Category Name="Kochkurs" schemaorg="CourseInstance" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="künstlerischer Hobbykurs" schemaorg="CourseInstance" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="handwerklicher Hobbykurs" schemaorg="CourseInstance" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Sportkurs" schemaorg="CourseInstance" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Sonstiger Kurs" schemaorg="CourseInstance" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+  </Category>
+  <Category Name="Markt, Messe" Level="1">
+    <Category Name="Bauernmarkt" schemaorg="SaleEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Handwerksmarkt" schemaorg="SaleEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Kunstmarkt" schemaorg="SaleEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Messe" schemaorg="ExhibitionEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Straßen-, Flohmarkt" schemaorg="SaleEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Tag der Offenen Tür" schemaorg="ExhibitionEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Wirtschafts-, Sonderschau" schemaorg="ExhibitionEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Sonstiger Markt" schemaorg="SaleEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+  </Category>
+  <Category Name="Musikveranstaltung" Level="1">
+    <Category Name="Ballett" schemaorg="DanceEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Frühschoppen, Platz- oder Kurkonzert" schemaorg="MusicEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Konzert" schemaorg="MusicEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Musical" schemaorg="MusicEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Oper" schemaorg="MusicEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Operette" schemaorg="MusicEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Tanz" schemaorg="DanceEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Volksmusik, volkstümliche Musik" schemaorg="MusicEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Sonstige Musikveranstaltung" schemaorg="MusicEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+  </Category>
+  <Category Name="Religiöse Veranstaltung" Level="1">
+    <Category Name="Berg-, Feld-, Seemesse" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Gottesdienst, Messe" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Prozession" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Wallfahrt" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Sonstige religiöse Veranstaltung" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+  </Category>
+  <Category Name="Sportveranstaltung" schemaorg="SportsEvent" Level="1" />
+  <Category Name="Theater" schemaorg="TheaterEvent" Level="1" />
+  <Category Name="Festival" schemaorg="Festival" Level="1" />
+  <Category Name="Führungen, Fahrten, Touren" Level="1">
+    <Category Name="Abenteuertour" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Ausflug" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Führung" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="geführte Wanderung" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Nostalgiefahrt" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Pferdeschlitten-, Pferdekutschenfahrt" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Rundfahrt" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Schifffahrt" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Stadtführung" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Sonstige Tour" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+  </Category>
+  <Category Name="Vergnügungsveranstaltung" Level="1">
+    <Category Name="Ball, Tanzveranstaltung" schemaorg="DanceEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Fest" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Filmvorführung/Kino" schemaorg="ScreeningEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Folklore, Umzug" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Show, Tanzvorführung" schemaorg="DanceEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Silvester, Neujahr" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Stadt-, Orts-, Vereinsfest" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Zirkus" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Sonstige Vergnügungsveranstaltung" schemaorg="SocialEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+  </Category>
+  <Category Name="Vorträge" Level="1">
+    <Category Name="Dia-Schau" schemaorg="ScreeningEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Diskussion" schemaorg="EducationEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Bewegtbild" schemaorg="ScreeningEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Kongress, Tagung" schemaorg="EducationEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Lesung" schemaorg="LiteraryEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Seminar, Workshop" schemaorg="EducationEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+    <Category Name="Vortrag" schemaorg="EducationEvent" Pin="https://pins.tourdata.at/veranstaltungen.png" />
+  </Category>
+</Categories>

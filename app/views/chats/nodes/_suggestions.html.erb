@@ -1,0 +1,7 @@
+<div class="chat-node-suggestions">
+  <% unless suggestions.nil? %>
+    <% suggestions.each do |suggestion| %>
+      <%= render 'chats/nodes/suggestion', suggestion: suggestion %>
+    <% end %>
+  <% end %>
+</div>

@@ -1,0 +1,187 @@
+<div class="chat-input">
+  <div id="editable-area" class="editable-area" contenteditable="true"></div>
+  <div id="record-animation" style="display: none;">Nimmt auf... <span id="record-time">00:00</span></div>
+  <a id="record-voice-button" class="record-voice-button"></a>
+  <a id="send-question-button" class="send-question-button"></a>
+</div>
+
+<script>
+    const chatInput = $('.chat-input').find('.editable-area');
+
+    let sessionContext;
+
+    function askWatson(question) {
+        $.getScript(`<%= ask_watson_assistant_path %>&message=${question}&context=${JSON.stringify(sessionContext)}`);
+        // TODO post so we can use callbacks
+    }
+
+    function addQuestionItem(question, timestamp) {
+        // TODO call postChatNode to watson
+        /*
+        analyzeText(question, function(analyzeResult) {
+          askWatson(question, analyzeResult, callback);
+        });
+
+        CursorAPI.saveIncomingMessage(question);
+        */
+        $.getScript(`<%= chat_node_path %>&message=${question}&direction=out&timestamp=${timestamp}`);
+    }
+
+    function addAnswerItem(answer, timestamp) {
+        $.getScript(`<%= chat_node_path %>&message=${answer}&direction=in&timestamp=${timestamp}`);
+    }
+
+    function addAnswerItems(answers, timestamp) {
+        const messageQuery = answers.map(answer => `&message[]=${answer}`).join('');
+        $.getScript(`<%= chat_node_path %>${messageQuery}&direction=in&timestamp=${timestamp}`);
+    }
+
+    function scrollToBottom() {
+        $(".chat-nodes").animate({ scrollTop: 9999999 }, "slow");
+    }
+
+    function postAnswer(answer) {
+        addAnswerItem(answer, Date.now());
+        setTimeout(() => scrollToBottom(), 500);
+    }
+
+    function postQuestion(question) {
+        addQuestionItem(question, Date.now());
+
+        // TODO store question by API
+
+        //addAnswerPlaceholder();
+        askWatson(question);
+
+        scrollToBottom();
+    }
+
+    function postQuestionFromInput() {
+        const message = chatInput.text();
+        chatInput.html('');
+        postQuestion(message);
+    }
+
+    $('#send-question-button').click(() => {
+        postQuestionFromInput();
+    });
+    chatInput.off('keypress').keypress(e => {
+        if (e.keyCode === 13) {
+            e.preventDefault();
+            postQuestionFromInput();
+        }
+    });
+
+    function initSuggestions() {
+        $('.chat-node-suggestion').each(function(index) {
+            $(this).off('click').click(function() {
+                postQuestion($(this).text());
+            });
+        });
+    }
+
+    function addEvent() {
+        if (sessionContext.event) {
+            const eventNode = $(`<div class="chat-node" data-direction="event" data-timestamp="undefined">
+                <div class="chat-node-wrapper">
+                <div class="chat-node-content">${sessionContext.event}</div>
+              </div>
+            </div>`);
+            $('.chat-nodes').append(eventNode);
+            sessionContext.event = null;
+        }
+    }
+
+    function addSuggestions() {
+        if (sessionContext.suggestions && sessionContext.suggestions.length) {
+            const suggestions = $('<div class="chat-node-suggestions"></div>');
+            sessionContext.suggestions.forEach(suggestion => {
+                suggestions.append($(`<div class="chat-node-suggestion">${suggestion}</div>`));
+                $('.chat-node').last().append(suggestions);
+            });
+            sessionContext.suggestions = [];
+        }
+        initSuggestions();
+    }
+
+    function storeContext(context) {
+        console.log(context);
+        sessionContext = context;
+    }
+
+    initSuggestions();
+
+    var voiceRecognition;
+
+    var recordTimer = null;
+    var recordTime = 0;
+
+    function toHHMMSS(secs) {
+        var hours   = Math.floor(secs / 3600);
+        var minutes = Math.floor((secs - (hours * 3600)) / 60);
+        var seconds = secs - (hours * 3600) - (minutes * 60);
+
+        if (hours   < 10) {hours   = "0" + hours;}
+        if (minutes < 10) {minutes = "0" + minutes;}
+        if (seconds < 10) {seconds = "0" + seconds;}
+        return minutes + ':' + seconds;
+    }
+
+    function updateRecordTimer() {
+        $('#record-time').text(toHHMMSS(recordTime));
+        recordTimer = setTimeout(function() {
+            recordTime++;
+            updateRecordTimer();
+        }, 1000);
+    }
+
+    function showRecordAnimation() {
+        recordTime = 0;
+        clearTimeout(recordTimer);
+        updateRecordTimer();
+        $('#record-animation').show();
+    }
+
+    function hideRecordAnimation() {
+        recordTime = 0;
+        clearTimeout(recordTimer);
+        $('#record-animation').hide();
+    }
+
+    function initVoiceRecognition() {
+        try {
+            var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            var voiceRecognition = new SpeechRecognition();
+
+            voiceRecognition.onstart = function() {
+                console.log('Voice recognition activated. Try speaking into the microphone.');
+                showRecordAnimation();
+            }
+
+            voiceRecognition.onspeechend = function() {
+                console.log('You were quiet for a while so voice recognition turned itself off.');
+                hideRecordAnimation();
+            }
+
+            voiceRecognition.onerror = function(event) {
+                if (event.error == 'no-speech') {
+                    console.log('No speech was detected. Try again.');
+                };
+                // TODO end animation
+            }
+
+            voiceRecognition.onresult = function(event) {
+                var current = event.resultIndex;
+                var transcript = event.results[current][0].transcript;
+                postQuestion(transcript);
+            }
+
+            $('#record-voice-button').click(function() {
+                console.log(voiceRecognition);
+                voiceRecognition.start();
+            });
+        } catch(e) {
+            console.error(e);
+        }
+    }
+</script>

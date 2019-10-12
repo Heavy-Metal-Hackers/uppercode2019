@@ -1,0 +1,31 @@
+<%%= link_to t('activerecord.link.add_new'), new_<%= singular_table_name %>_path, :class => "pull-right" if can? :create, <%= class_name %> %>
+<h1 id="main-title" style="margin-top: 0px;">
+  <%%= t('activerecord.models.<%= singular_table_name %>.other') %>
+</h1>
+<%%= render 'layouts/search' %>
+<table class="table table-stripped">
+  <thead>
+    <tr>
+      <%- attributes.each do |attribute| -%>
+        <th><%%= t('activerecord.attributes.<%= singular_table_name %>.<%= attribute.name %>') %></th>
+      <%- end -%>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%% @<%= table_name %>.each do |<%= singular_table_name %>| %>
+      <tr>
+        <%- attributes.each do |attribute| -%>
+          <td><%%= <%= singular_table_name %>.<%= attribute.name %> %></td>
+        <%- end -%>
+        <td><%%= link_to t('activerecord.link.details'), <%= singular_table_name %> %></td>
+        <td><%%= link_to t('activerecord.link.edit'), edit_<%= singular_table_name %>_path(<%= singular_table_name %>) if can? :edit, <%= singular_table_name %> %></td>
+        <td><%%= link_to t('activerecord.link.destroy'), <%= singular_table_name %>, method: :delete, data: { confirm: t('devise.are_you_sure') } if can? :destroy, <%= singular_table_name %> %></td>
+      </tr>
+    <%% end %>
+  </tbody>
+</table>
+<%%= will_paginate @<%= table_name %>, class: "apple_pagination", previous_label: t('activerecord.link.previous'), next_label: t('activerecord.link.next') %>

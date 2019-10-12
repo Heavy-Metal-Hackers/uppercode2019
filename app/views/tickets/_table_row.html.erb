@@ -1,0 +1,10 @@
+<tr onclick="window.open('<%= ticket_path(ticket.ticketnummer) %>', '_self')">
+  <td><%= ticket.ticketnummer %></td>
+  <td><%= ldate ticket.stoerungsbeginn %></td>
+  <td><%= ticket.dienstTechnik %></td>
+  <td><%= ticket.dienstProdukt %></td>
+  <td><%= ticket.problembeschreibung %></td>
+  <td><span class="status-badge"><%= ticket.status %></span></td>
+  <td><%= ldate ticket.stoerungsende %></td>
+  <td><%= ldate ticket.zielzeit %></td>
+</tr>

@@ -1,0 +1,6 @@
+$('.chat-dialog').find('.chat-node').last().after(`<%= render 'chats/nodes/chat_node',
+  message: @message,
+  direction: @direction,
+  timestamp: @timestamp %>`);
+
+initSuggestions();

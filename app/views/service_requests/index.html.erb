@@ -1,0 +1,17 @@
+<div class="chat-dialog">
+  <div class="chat-dialog-title">Service Chat</div>
+  <div class="chat-nodes">
+    <%= render 'chats/nodes/chat_node',
+               message: 'Hallo! Ich bin Ihr persönlicher Vodafone Servicebot. 🤖',
+               direction: 'in',
+               timestamp: '' %>
+    <%= render 'chats/nodes/chat_node',
+               message: 'Welche Störung möchten Sie melden?',
+               direction: 'in',
+               timestamp: '',
+               suggestions: ['Komplettausfall der Verbindung', 'LEDs des Routers blinken', 'Langsamer Upstream', 'Langsamer Downstream'] %>
+    <%#= render 'chats/nodes/chat_node', message: 'Störung erfolgreich behoben', direction: 'event', timestamp: '' %>
+  </div>
+  <%= render 'chats/input' %>
+</div>
+

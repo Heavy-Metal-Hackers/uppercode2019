@@ -1,0 +1,6 @@
+<div class="chat-node" data-direction="<%= direction %>" data-timestamp="<%= timestamp %>">
+  <div class="chat-node-wrapper">
+    <div class="chat-node-content"><%= message %></div>
+  </div>
+  <%= render 'chats/nodes/suggestions', suggestions: suggestions if defined? suggestions %>
+</div>

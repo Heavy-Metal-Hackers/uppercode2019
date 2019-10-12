@@ -1,0 +1,10 @@
+<table>
+  <thead>
+    <%= render 'table_head' %>
+  </thead>
+  <tbody>
+    <% @tickets.each do |ticket| %>
+        <%= render 'table_row', ticket: ticket %>
+    <% end %>
+  </tbody>
+</table>

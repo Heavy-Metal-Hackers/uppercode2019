@@ -1,0 +1,43 @@
+<Categories Type="3">
+    <Category Name="Betriebsart">
+	    <Category Name="Almwirtschaft/Hütte" Pin="https://pins.tourdata.at/gastronomie.png" />
+		<Category Name="Bergrestaurant" Pin="https://pins.tourdata.at/gastronomie.png" />
+	    <Category Name="Bar/Pub" Pin="https://pins.tourdata.at/gastronomie.png" />
+	    <Category Name="Buffet/Imbiss/Fastfood" Pin="https://pins.tourdata.at/gastronomie.png" />
+	    <Category Name="Diskothek/Tanzlokal" Pin="https://pins.tourdata.at/gastronomie.png" />
+	    <Category Name="Eisdiele/Eissalon" Pin="https://pins.tourdata.at/gastronomie.png" />
+	    <Category Name="Gasthaus/Wirtshaus" Pin="https://pins.tourdata.at/gastronomie.png" />
+	    <Category Name="Haubenlokal" Pin="https://pins.tourdata.at/gastronomie.png" />
+	    <Category Name="Heuriger/Buschenschank" Pin="https://pins.tourdata.at/gastronomie.png" />
+      	<Category Name="Jausenstation" Pin="https://pins.tourdata.at/gastronomie.png" />
+	    <Category Name="Kaffeehaus/Café" Pin="https://pins.tourdata.at/gastronomie.png" />
+	    <Category Name="Konditorei" Pin="https://pins.tourdata.at/gastronomie.png" />
+	    <Category Name="Mostschänke" Pin="https://pins.tourdata.at/gastronomie.png" />
+	    <Category Name="Nachtclub" Pin="https://pins.tourdata.at/gastronomie.png" />	
+	    <Category Name="Pizzeria" Pin="https://pins.tourdata.at/gastronomie.png" />
+	    <Category Name="Rasthaus/Autobahnraststätte" Pin="https://pins.tourdata.at/gastronomie.png" />
+	    <Category Name="Restaurant" Pin="https://pins.tourdata.at/gastronomie.png" />
+	    <Category Name="Skihütte" Pin="https://pins.tourdata.at/gastronomie.png" />
+	    <Category Name="Vinothek" Pin="https://pins.tourdata.at/gastronomie.png" />
+	    <Category Name="Sonstiger Gastronomiebetrieb" Pin="https://pins.tourdata.at/gastronomie.png" />
+    </Category>
+    <Category Name="Kuechenart">
+      <Category Name="Regional" />
+      <Category Name="International" />
+      <Category Name="Mediterran" />
+      <Category Name="Vegan" />
+      <Category Name="Vegetarisch" />
+      <Category Name="Ritteressen" />
+      <Category Name="Österreichisch" />
+      <Category Name="Italienisch" />
+      <Category Name="Griechisch" />
+      <Category Name="Französisch" />
+      <Category Name="Türkisch" />
+      <Category Name="Chinesisch" />
+      <Category Name="Japanisch" />
+      <Category Name="Indisch" />
+      <Category Name="Mexikanisch" />
+      <Category Name="Sonstiges" />
+      <Category Name="nicht spezifiziert" />      
+    </Category>
+</Categories>

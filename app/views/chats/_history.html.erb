@@ -1,0 +1,14 @@
+<%# TODO history of ticket.chats.chat_nodes %>
+<div class="chat-history">
+  <div class="field-label">Kontakthistorie</div>
+  <%= render 'chats/nodes/chat_node',
+             message: 'Hallo! Ich bin Ihr persönlicher Vodafone Servicebot. 🤖',
+             direction: 'in',
+             timestamp: '' %>
+  <% ChatNode.where(active: true).order(timestamp: :desc).each do |chat_node| %>
+      <%= render 'chats/nodes/chat_node',
+                 message: chat_node.message,
+                 direction: chat_node.direction,
+                 timestamp: chat_node.timestamp %>
+  <% end %>
+</div>

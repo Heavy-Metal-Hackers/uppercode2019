@@ -1,0 +1,22 @@
+<Categories Type="1">
+  <Category Name="Unterkünfte" Expanded="true" Level="1">
+    <Category Name="Bauernhof" schemaorg="LodgingBusiness" Pin="https://pins.tourdata.at/unterkunft.png" />
+    <Category Name="Campingplatz" schemaorg="Campground" Pin="https://pins.tourdata.at/unterkunft.png" />
+    <Category Name="Ferienhaus" schemaorg="HolidayHome" Pin="https://pins.tourdata.at/unterkunft.png" />
+    <Category Name="Ferienwohnung" schemaorg="HolidayHome" Pin="https://pins.tourdata.at/unterkunft.png" />
+    <Category Name="Gasthof" schemaorg="Hotel" Pin="https://pins.tourdata.at/unterkunft.png" />
+    <Category Name="Hotel" schemaorg="Hotel" Pin="https://pins.tourdata.at/unterkunft.png" />
+    <Category Name="Hotel garni" schemaorg="Hotel" Pin="https://pins.tourdata.at/unterkunft.png" />
+    <Category Name="Hütte" schemaorg="LodgingBusiness" Pin="https://pins.tourdata.at/unterkunft.png" />
+    <Category Name="Jugendherberge/Jugendgästehaus/Herberge" schemaorg="Hostel" Pin="https://pins.tourdata.at/unterkunft.png" />
+    <Category Name="Motel" schemaorg="Motel" Pin="https://pins.tourdata.at/unterkunft.png" />
+    <Category Name="Pension" schemaorg="Hotel" Pin="https://pins.tourdata.at/unterkunft.png" />
+    <Category Name="Privatzimmer" schemaorg="LodgingBusiness" Pin="https://pins.tourdata.at/unterkunft.png" />
+    <Category Name="Sonstiger Unterkunftsbetrieb" schemaorg="LodgingBusiness" Pin="https://pins.tourdata.at/unterkunft.png" />
+  </Category>
+  <Category Name="Veranstaltungszentren" Expanded="true" Level="1">
+    <Category Name="Agentur" schemaorg="GovernmentOrganizsation" Pin="https://pins.tourdata.at/veranstaltungszentren.png" />
+    <Category Name="Location" schemaorg="Place" Pin="https://pins.tourdata.at/veranstaltungszentren.png" />
+    <Category Name="Veranstaltungszentrum" schemaorg="Place" Pin="https://pins.tourdata.at/veranstaltungszentren.png" />
+  </Category>
+</Categories>

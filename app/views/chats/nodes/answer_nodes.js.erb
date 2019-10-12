@@ -1,0 +1,17 @@
+<%# @answers.each do |answer| %>
+  //postAnswer('<%#= answer %>');
+<%# end %>
+
+storeContext(<%= @context.to_json.to_s.html_safe %>);
+
+addAnswerItems([
+    <% @answers.each do |answer| %>
+      '<%= answer %>',
+    <% end %>
+]);
+
+setTimeout(() => {
+    addSuggestions();
+    addEvent();
+    scrollToBottom();
+}, 500);

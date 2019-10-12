@@ -1,0 +1,8 @@
+development:
+    adapter: postgresql
+    encoding: unicode
+    database: oberoesterreichtourismus
+    username: oberoesterreichtourismus
+    password: oberoesterreichtourismus
+    host: localhost
+    port: '5432'

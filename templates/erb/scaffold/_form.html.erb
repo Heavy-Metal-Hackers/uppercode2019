@@ -1,0 +1,21 @@
+<%%= simple_form_for(@<%= singular_table_name %>, :html => {:class => 'form-horizontal'}, wrapper_mappings: {
+    check_boxes: :horizontal_radio_and_checkboxes,
+    radio_buttons: :horizontal_radio_and_checkboxes,
+    file: :horizontal_file_input,
+    boolean: :horizontal_boolean
+  }) do |f| %>
+  <%%= f.error_notification %>
+
+  <div class="form-inputs">
+  <%- attributes.each do |attribute| -%>
+    <%- unless attribute.name == "create_user" || attribute.name == "update_user" || attribute.name == "active" -%>
+      <%%= f.<%= attribute.reference? ? :association : :input %> :<%= attribute.name %> %>
+    <%- end -%>
+  <%- end -%>
+  </div>
+
+  <div class="form-actions">
+    <%%= f.button :submit %>
+  </div>
+  <div style="height: 1px; clear: both"></div>
+<%% end %>

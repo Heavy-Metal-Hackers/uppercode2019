@@ -1,0 +1,16 @@
+<Categories Type="4">
+  <Category Name="E-Bike-Tour" Level="1" Pin="https://pins.tourdata.at/tour_ebike.png" />
+  <Category Name="Klettersteig" Level="1" Pin="https://pins.tourdata.at/tour_klettersteig.png" />
+  <Category Name="Loipe" Level="1" Pin="https://pins.tourdata.at/tour_loipen.png" />
+  <Category Name="Motorrad-Tour" Level="1" Pin="https://pins.tourdata.at/tour_moho.png" />
+  <Category Name="Mountainbike-Tour" Level="1" Pin="https://pins.tourdata.at/tour_mtb.png" />
+  <Category Name="Nordic-Walking-Strecke, Laufstrecke" Level="1" Pin="https://pins.tourdata.at/tour_laufen.png" />
+  <Category Name="Rad-Tour" Level="1" Pin="https://pins.tourdata.at/tour-radfahren.png" />
+  <Category Name="Reitweg" Level="1" Pin="https://pins.tourdata.at/tour_reiten.png" />
+  <Category Name="Rennrad-Tour" Level="1" Pin="https://pins.tourdata.at/tour_rennrad.png" />
+  <Category Name="Skitour" Level="1" Pin="https://pins.tourdata.at/tour_skitour.png" />
+  <Category Name="Schneeschuh-Tour" Level="1" Pin="https://pins.tourdata.at/tour_schneeschuhwandern.png" />
+  <Category Name="Themenstraße" Level="1" Pin="https://pins.tourdata.at/tour_themenstrasse.png" />
+  <Category Name="Wanderweg" Level="1" Pin="https://pins.tourdata.at/tour_wandern.png" />
+  <Category Name="Sonstige Tour" Level="1" Pin="https://pins.tourdata.at/poi_leer_tour.png" />
+</Categories>

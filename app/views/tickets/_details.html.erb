@@ -1,0 +1,58 @@
+<!-- TODO chatbot auch hier mit verlauf um über ticket zu reden mit events (z.b. techniker informiert) -->
+<div class="ticket-progress-wrapper">
+  <div class="ticket-progress">
+    <div class="progress-title">Verlauf Ihrer Störungsmeldung</div>
+    <div class="progress-items">
+      <!-- TODO icons for störung gemeldet, störung in bearbeitung, techniker unterwegs, techniker vor ort, fixed -->
+      <div class="progress-item" data-active="true" style="background-image: url('<%= image_path('icons8-fehler-50.png') %>'); background-size: 42px;"></div>
+      <div class="progress-item" data-active="true" style="background-image: url('<%= image_path('icons8-über-uns-weiblich-80.png') %>');"></div>
+      <div class="progress-item" data-active="true" style="background-image: url('<%= image_path('icons8-limousine-64.png') %>');"></div>
+      <div class="progress-item" data-active="false" style="background-image: url('<%= image_path('icons8-wartung-50 (1).png') %>'); background-size: 38px;"></div>
+      <div class="progress-item" data-active="false" style="background-image: url('<%= image_path('icons8-systeminformation-80.png') %>');"></div>
+    </div>
+    <div class="ticket-dates">
+      <div class="ticket-date">
+        <div class="field-label">Störungsbeginn</div>
+        <div class="status-value"><%= ldate ticket.stoerungsbeginn %></div>
+      </div>
+      <div class="ticket-date">
+        <div class="field-label">Zielzeit laut SLA</div>
+        <div class="status-value"><%= ldate ticket.zielzeit %></div>
+      </div>
+    </div>
+  </div>
+  <div class="ticket-info">
+    <div class="field-label">Produkt/Service</div>
+    <div class="status-value"><%= ticket.dienstProdukt %>, <%= ticket.dienstTechnik %></div>
+    <div class="field-label">Ihr ausgewählter Standardansprechpartner</div>
+    <div class="status-value" style="margin-bottom: 8px;"><%= ticket.customer.standardAnsprechpartner %></div>
+    <button>Ändern</button>
+  </div>
+</div>
+
+<div class="ticket-status-wrapper">
+  <div class="ticket-status">
+    <div class="field-label">Status am <%= ldate DateTime.now %></div>
+    <div class="status-value" style="margin-bottom: 8px;">Der Techniker ist zu Ihnen unterwegs; vorraussichtliche Ankunft: 17 Uhr</div>
+  </div>
+  <button style="margin-bottom: 14px;">Statushistorie</button>
+  <div class="ticket-status">
+    <div class="field-label">Nächster Schritt</div>
+    <div class="status-value">Der Techniker wird Ihre EasyBox gegen ein neues Gerät austauschen.</div>
+  </div>
+
+  <div class="status-subscription">
+    <div class="field-label">Ihre Status-Abonnements</div>
+    <div class="status-subscription-item">
+      <div class="status-checked"></div>
+      <div>Bei <b>Statusänderung</b></div>
+    </div>
+    <div class="status-subscription-item">
+      <div class="status-checked"></div>
+      <div>Alle <b>2h</b> via <b>E-Mail</b> an <b>wschmidt@mueller-hosting.de</b></div>
+    </div>
+    <button>Ändern</button>
+  </div>
+</div>
+
+<%= render 'chats/history' %>

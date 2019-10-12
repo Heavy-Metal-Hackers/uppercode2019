@@ -1,0 +1,86 @@
+# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
+
+de:
+  devise:
+    confirmations:
+      confirmed: "Ihre E-Mail-Adresse wurde erfolgreich bestätigt."
+      send_instructions: "Sie erhalten in wenigen Minuten eine E-Mail mit Anweisungen, wie Sie Ihre E-Mail-Adresse bestätigen."
+      send_paranoid_instructions: "Falls Ihre E-Mail-Addresse in unserer Datenbank existiert, erhalten Sie in wenigen Minuten eine E-Mail mit Anweisungen, wie Sie Ihre E-Mail-Adresse bestätigen."
+    failure:
+      already_authenticated: "Sie Sind bereits angemeldet."
+      inactive: "Ihr Konto ist noch nicht aktiviert."
+      invalid: "Ungültige Anmeldedaten."
+      locked: "Ihr Konto ist gesperrt."
+      last_attempt: "Sie haben nur noch einen weiteren Versuch, bis Ihr Konto gesperrt wird."
+      not_found_in_database: "Ungültige %{authentication_keys} oder Passwort."
+      timeout: "Ihre Sitzung ist abgelaufen. Bitte melden Sie sich erneut an, um fortzufahren."
+      unauthenticated: "Bitte melden Sie sich an oder registrieren Sie sich, um fortzufahren."
+      unconfirmed: "Bestätigen Sie Ihre E-Mail-Adresse, um fortzufahren."
+    mailer:
+      confirmation_instructions:
+        subject: "Anweisungen zur Bestätigung"
+      reset_password_instructions:
+        subject: "Anweisungen zum Setzen des Passworts"
+        text: "Diese E-Mail wurde Ihnen zugesendet, damit Sie ein neues Passwort vergeben können. Klicken Sie auf untenstehenden Link, um Ihr Passwort zu setzen. Der Link ist ab Versand der E-Mail 6 Stunden lang gültig."
+        link: "Neues Passwort setzen"
+        subtext: "Falls Sie nicht wissen, warum Sie diese E-Mail erhalten haben, ignorieren Sie sie."
+        title: "Hallo!"
+      unlock_instructions:
+        subject: "Anweisungen zur Entsperrung"
+        title: "Hallo,"
+        text: "Ihr Konto wurde gesperrt, weil zu viele fehlgeschlagene Anmeldeversuche erkannt wurden."
+        subtext: "Klicken Sie auf untenstehenden Link, um Ihr Konto zu entsperren:"
+        link: "Konto freischalten"
+      confirm_my_account: "Konto bestätigen"
+    omniauth_callbacks:
+      failure: "Sie konnten nicht von %{kind} angemeldet werden, weil \"%{reason}\"."
+      success: "Erfolgreich angemeldet von %{kind} Konto."
+    passwords:
+      no_token: "Sie können diese Seite nicht aufrufen, ohne einer E-Mail zum Zurücksetzen Ihres Passwortes gefolgt zu sein. Falls Sie einer solchen E-Mail gefolgt sind, stellen Sie bitte sicher, dass Sie der vollen URL des Links gefolgt sind."
+      send_instructions: "Sie werden in wenigen Minuten eine E-Mail mit einem Link zum Zurücksetzen Ihres Passwortes erhalten."
+      send_paranoid_instructions: "Falls Ihre E-Mail-Adresse in unserer Datenbank existiert, werden Sie in wenigen Minuten eine E-Mail mit einem Link zum Zurücksetzen Ihres Passwortes erhalten."
+      updated: "Ihr Passwort wurde erfolgreich geändert. Sie werden nun angemeldet."
+      updated_not_active: "Ihr Passwort wurde erfolgreich geändert."
+      send_instructions_button: "Anweisungen zum Zurücksetzen des Passworts zusenden"
+      new: "Neues Passwort"
+      confirm_new: "Neues Passwort bestätigen"
+      change: "Passwort ändern"
+    registrations:
+      destroyed: "Ihr Konto wurde erfolgreich deaktiviert. Wir hoffen, Sie bald wiederzusehen."
+      signed_up: "Willkommen! Sie wurden erfolgreich registriert."
+      signed_up_but_inactive: "Sie wurden erfolgreich registriert. Jedoch wurden Sie nicht angemeldet, weil Ihr Konto noch nicht aktiviert ist."
+      signed_up_but_locked: "Sie wurden erfolgreich registriert. Jedoch wurden Sie nicht angemeldet, weil Ihr Konto gesperrt ist."
+      signed_up_but_unconfirmed: "Sie erhalten in wenigen Minuten eine E-Mail mit Anweisungen, wie Sie Ihre E-Mail-Adresse bestätigen."
+      update_needs_confirmation: "Ihr Konto wurde erfolgreich aktualisiert, jedoch muss Ihre E-Mail-Adresse bestätigt werden. Überprüfen Sie Ihre E-Mails und folgen Sie dem Bestätigungs-Link, um Ihre neue E-Mail-Adresse zu bestätigen."
+      updated: "Ihr Konto wurde erfolgreich aktualisiert."
+      sign_up: "Registrieren"
+      minchars: "Zeichen mindestens"
+      cancel_my_account: "Konto deaktivieren"
+    sessions:
+      signed_in: "Erfolgreich angemeldet."
+      signed_out: "Erfolgreich abgemeldet."
+      already_signed_out: "Sie sind bereits abgemeldet."
+      new:
+        login: "Anmelden"
+    unlocks:
+      send_instructions: "Sie erhalten in wenigen Minuten eine E-Mail mit Anweisungen, wie Sie Ihren Konto entsperren."
+      send_paranoid_instructions: "Falls Ihr Konto existiert, erhalten Sie in wenigen Minuten eine E-Mail mit Anweisungen, wie Sie Ihren Konto entsperren."
+      unlocked: "Ihr Konto wurde erfolgreich entsperrt. Bitte melden Sie sich an, um fortzufahren."
+      resend_instructions: "Anweisungen zum Zurücksetzen des Passworts erneut senden"
+    are_you_sure: "Sind Sie sicher?"
+    login: "Anmelden"
+    sign_in_with: "Anmelden mit"
+    no_unlock_instructions: "Keine Anweisungen zur Entsperrung erhalten?"
+    no_confirmation_instructions: "Keine Anweisungen zur Bestätigung erhalten?"
+    forgot_password: "Passwort vergessen?"
+    sign_up: "Registrieren"
+  errors:
+    messages:
+      already_confirmed: "wurde bereits bestätigt, bitte versuchen Sie, sich anzumelden"
+      confirmation_period_expired: "muss innerhalb eines Zeitraums von %{period} bestätigt werden, bitte fordern Sie ein neues an"
+      expired: "ist abgelaufen, bitte fordern Sie ein neues an"
+      not_found: "nicht gefunden"
+      not_locked: "war nicht gesperrt"
+      not_saved:
+        one: "Wegen eines Fehlers konnte %{resource} nicht gespeichert werden:"
+        other: "Wegen %{count} Fehler konnte %{resource} nicht gespeichert werden:"

@@ -1,0 +1,10 @@
+<div class="view-container">
+  <div class="view-title">Tickets</div>
+
+  <% if @tickets.empty? %>
+      <div class="view-empty-state">Super! Es wurden keine Störungen in Ihrem Festnetz gemeldet.</div>
+  <% else %>
+      <div class="view-hint">Klicken Sie auf einen Eintrag, um das entsprechende Ticket zu öffnen</div>
+      <%= render 'table' %>
+  <% end %>
+</div>

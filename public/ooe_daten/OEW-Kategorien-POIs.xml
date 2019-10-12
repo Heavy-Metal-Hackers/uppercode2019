@@ -1,0 +1,345 @@
+<Categories Type="5">
+  <Category Name="Einkaufen" Expanded="false" Level="1">
+    <Category Name="Anglerbedarf" schemaorg="SportingGoodsStore" Pin="https://pins.tourdata.at/poi_fischwasser.png" />
+    <Category Name="Antiquitäten" schemaorg="FurnitureStore" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Apotheke" schemaorg="Pharmacy" Pin="https://pins.tourdata.at/poi_apotheke.png" />
+    <Category Name="Atelier/Kunsthandlung" schemaorg="ArtGallery" Pin="https://pins.tourdata.at/poi_galerie.png" />
+    <Category Name="Bäckerei/Konditorei/Lebzelterei" schemaorg="Bakery" Pin="https://pins.tourdata.at/poi_baecker.png" />
+    <Category Name="Bademoden" schemaorg="ClothingStore" Pin="https://pins.tourdata.at/poi_mode.png" />
+    <Category Name="Bandagist" schemaorg="MedicalOrganization" Pin="https://pins.tourdata.at/poi_bandagist.png" />
+    <Category Name="Bauernladen" schemaorg="ConvenienceStore" Pin="https://pins.tourdata.at/poi_bauernladen.png" />
+    <Category Name="Baumarkt" schemaorg="WholesaleStore" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Bike-Shop" schemaorg="BikeStore" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Blumen" schemaorg="Florist" Pin="https://pins.tourdata.at/poi_blumenhandlung.png" />
+    <Category Name="Bekleidung und Mode" schemaorg="ClothingStore" Pin="https://pins.tourdata.at/poi_boutique.png" />
+    <Category Name="Brauerei" schemaorg="Brewery" Pin="https://pins.tourdata.at/poi_brauerrei.png" />
+    <Category Name="Buch/Papier/Medien" schemaorg="BookStore" Pin="https://pins.tourdata.at/poi_zeitschriften.png" />
+    <Category Name="Büchsenmacher" schemaorg="WholesaleStore" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Direktvermarkter/landwirtschaftlicher Produzent" schemaorg="WholesaleStore" Pin="https://pins.tourdata.at/poi_direktvermarkter.png" />
+    <Category Name="Einrichtung/Möbel/Design" schemaorg="FurnitureStore" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Elektro/HiFi" schemaorg="ElectronicsStore" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Erotik" schemaorg="AdultEntertainment" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Fleischhauerei" schemaorg="ConvenienceStore" Pin="https://pins.tourdata.at/poi_fleischhauerei.png" />
+    <Category Name="Foto und Technik" schemaorg="Store" Pin="https://pins.tourdata.at/poi_fotogeschaeft.png" />
+    <Category Name="Friseurbedarf" schemaorg="HairSalon" Pin="https://pins.tourdata.at/poi_friseur.png" />
+    <Category Name="Gartenfachmarkt" schemaorg="GardenStore" Pin="https://pins.tourdata.at/poi_naturpark.png" />
+    <Category Name="Geschenke" schemaorg="Store" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Golf-Shop" schemaorg="SportingGoodsStore" Pin="https://pins.tourdata.at/poi_golf.png" />
+    <Category Name="Handwerk/Kunsthandwerk" schemaorg="ArtGallery" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Haushaltswaren" schemaorg="HomeGoodsStore" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Heimtextilien" schemaorg="HomeGoodsStore" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Käserei" schemaorg="GroceryStore" Pin="https://pins.tourdata.at/poi_kaeserei.png" />
+    <Category Name="Kinderausstattung" schemaorg="FurnitureStore" Pin="https://pins.tourdata.at/poi_mode.png" />
+    <Category Name="Mobiltelefon und Zubehör" schemaorg="MobilePhoneStore" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Mosteria" schemaorg="LiquorStore" Pin="https://pins.tourdata.at/poi_vinothek.png" />
+    <Category Name="Musikbedarf" schemaorg="MusicStore" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Naturkost/Bioladen" schemaorg="GroceryStore" Pin="https://pins.tourdata.at/poi_naturkostladen.png" />
+    <Category Name="Optiker/Brillen" schemaorg="Optician" Pin="https://pins.tourdata.at/poi_optiker.png" />
+    <Category Name="Parfümerie und Drogerie" schemaorg="ConvenienceStore" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Reformhaus" schemaorg="ConvenienceStore" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Reit-Shop" schemaorg="SportingGoodsStore" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Schnapsbrennerei" schemaorg="LiquorStore" Pin="https://pins.tourdata.at/poi_schnapsbrennerei.png" />
+    <Category Name="Spirituosenhandel" schemaorg="LiquorStore" Pin="https://pins.tourdata.at/poi_schnapsbrennerei.png" />
+    <Category Name="Schuhe und Lederwaren" schemaorg="ShoeStore" Pin="https://pins.tourdata.at/poi_schuh.png" />
+    <Category Name="Shopping Center" schemaorg="ShoppingCenter" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Souvenirs" schemaorg="Store" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Spielwaren" schemaorg="ToyStore" Pin="https://pins.tourdata.at/poi_spielwaren.png" />
+    <Category Name="Sport und Outdoor" schemaorg="SportingGoodsStore" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Supermarkt/Lebensmittelgeschäft" schemaorg="GroceryStore" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Tauch-Shop" schemaorg="SportingGoodsStore" Pin="https://pins.tourdata.at/poi_tauchen.png" />
+    <Category Name="Tierbedarf" schemaorg="PetStore" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Trafik" schemaorg="Store" Pin="https://pins.tourdata.at/poi_trafik.png" />
+    <Category Name="Uhren und Schmuck" schemaorg="JewelryStore" Pin="https://pins.tourdata.at/poi_juwelier.png" />
+    <Category Name="Versicherung" schemaorg="InsuranceAgency" Pin="https://pins.tourdata.at/poi_dienstleistungen.png" />
+    <Category Name="Vinothek" schemaorg="LiquorStore" Pin="https://pins.tourdata.at/poi_vinothek.png" />
+    <Category Name="Wäsche/Strümpfe" schemaorg="ClothingStore" Pin="https://pins.tourdata.at/poi_mode.png" />
+    <Category Name="Werksverkauf" schemaorg="WholesaleStore" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Wohnaccessoires/Deko" schemaorg="FurnitureStore" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+    <Category Name="Sonstige Einkaufsmöglichkeit" schemaorg="Store" Pin="https://pins.tourdata.at/poi_einkaufsmoeglichkeiten.png" />
+  </Category>
+  <Category Name="Freizeiteinrichtungen" Expanded="false" Level="1">
+    <Category Name="Casino" schemaorg="Casino" Pin="https://pins.tourdata.at/poi_casino.png" />
+    <Category Name="Themenpark/Freizeitpark" schemaorg="AmusementPark" Pin="https://pins.tourdata.at/poi_freizeiteinrichtung.png" />
+    <Category Name="Volkshaus" schemaorg="EventVenue" Pin="https://pins.tourdata.at/poi_freizeiteinrichtung.png" />
+    <Category Name="Sonstige Freizeiteinrichtung" schemaorg="EntertainmentBusiness" Pin="https://pins.tourdata.at/poi_freizeiteinrichtung.png" />
+  </Category>
+  <Category Name="Infrastruktur" Level="1">
+    <Category Name="Banken/Geld" Expanded="false" Level="2">
+      <Category Name="Bank" schemaorg="BankOrCreditUnion" Pin="https://pins.tourdata.at/poi_banken-geld.png" />
+      <Category Name="Bankomat" schemaorg="BankOrCreditUnion" Pin="https://pins.tourdata.at/poi_banken-geld.png" />
+      <Category Name="Wechselstube" schemaorg="FinancialService" Pin="https://pins.tourdata.at/poi_banken-geld.png" />
+      <Category Name="Sonstige Bank-/Geld-Institution" schemaorg="FinancialService" Pin="https://pins.tourdata.at/poi_banken-geld.png" />
+    </Category>
+    <Category Name="Bildungseinrichtungen" Expanded="false" Level="2">
+      <Category Name="Bücherei" schemaorg="Library" Pin="https://pins.tourdata.at/poi_bibliothek.png" />
+      <Category Name="Schule" schemaorg="School" Pin="https://pins.tourdata.at/poi_schule.png" />
+      <Category Name="Universität" schemaorg="CollegeOrUniversity" Pin="https://pins.tourdata.at/poi_bildungseinrichtung.png" />
+      <Category Name="Sonstige Bildungseinrichtung" schemaorg="EducationalOrganization" Pin="https://pins.tourdata.at/poi_bildungseinrichtung.png" />
+    </Category>
+    <Category Name="Behörden/Institutionen" Expanded="false" Level="2">
+      <Category Name="Botschaft/Konsulat" schemaorg="Embassy" Pin="https://pins.tourdata.at/poi_behoerde.png" />
+      <Category Name="Fundamt" schemaorg="Store" Pin="https://pins.tourdata.at/poi_fundamt.png" />
+      <Category Name="Gemeindeamt/Rathaus" schemaorg="CityHall" Pin="https://pins.tourdata.at/poi_behoerde.png" />
+      <Category Name="Post" schemaorg="PostOffice" Pin="https://pins.tourdata.at/poi_post.png" />
+      <Category Name="Sonstige Behörde/Institution" schemaorg="GovernmentOffice" Pin="https://pins.tourdata.at/poi_behoerde-institution.png" />
+    </Category>
+    <Category Name="Dienstleistungen" Expanded="false" Level="2">
+      <Category Name="Fahrradwerkstätte" schemaorg="BikeStore" Pin="https://pins.tourdata.at/poi_dienstleistungen.png" />
+      <Category Name="Fotograf/Fotostudio" schemaorg="Photograph" Pin="https://pins.tourdata.at/poi_fotogeschaeft.png" />
+      <Category Name="Friseur" schemaorg="HairSalon" Pin="https://pins.tourdata.at/poi_friseur.png" />
+      <Category Name="Internetpoint" schemaorg="ProfessionalService" Pin="https://pins.tourdata.at/poi_internetpoint.png" />
+      <Category Name="Kfz-Werkstätte" schemaorg="AutoRepair" Pin="https://pins.tourdata.at/poi_kfzwerkstatt.png" />
+      <Category Name="Kosmetik/Beauty/Massagen" schemaorg="BeautySalon" Pin="https://pins.tourdata.at/poi_kosmetik.png" />
+      <Category Name="Reinigung/Waschsalon" schemaorg="DryCleaningOrLaundry" Pin="https://pins.tourdata.at/poi_waschsalon.png" />
+      <Category Name="Schlüsseldienst" schemaorg="Locksmith" Pin="https://pins.tourdata.at/poi_dienstleistungen.png" />
+      <Category Name="Sonnenstudio/Solarium" schemaorg="HealthAndBeautyBusiness" Pin="https://pins.tourdata.at/poi_dienstleistungen.png" />
+      <Category Name="Sprachinstitut" schemaorg="EducationalOrganization" Pin="https://pins.tourdata.at/poi_dienstleistungen.png" />
+      <Category Name="Steuerberater" schemaorg="AccountingService" Pin="https://pins.tourdata.at/poi_dienstleistungen.png" />
+      <Category Name="Taxi/Shuttleservice" schemaorg="TaxiService" Pin="https://pins.tourdata.at/poi_dienstleistungen.png" />
+      <Category Name="Werbeagentur" schemaorg="ProfessionalService" Pin="https://pins.tourdata.at/poi_dienstleistungen.png" />
+      <Category Name="Sonstige Dienstleistungseinrichtung" schemaorg="ProfessionalService" Pin="https://pins.tourdata.at/poi_dienstleistungen.png" />
+    </Category>
+    <Category Name="Fremden-/Freizeitführer" Expanded="false" Level="2">
+      <Category Name="Berg- und Skiführer" schemaorg="ProfessionalService" Pin="https://pins.tourdata.at/poi_fremdenfuehrer.png" />
+      <Category Name="Mountainbike-Guide" schemaorg="ProfessionalService" Pin="https://pins.tourdata.at/poi_fremdenfuehrer.png" />
+      <Category Name="Naturvermittler" schemaorg="ProfessionalService" Pin="https://pins.tourdata.at/poi_fremdenfuehrer.png" />
+      <Category Name="Rad-Guide" schemaorg="ProfessionalService" Pin="https://pins.tourdata.at/poi_fremdenfuehrer.png" />
+      <Category Name="Stadtführer" schemaorg="ProfessionalService" Pin="https://pins.tourdata.at/poi_fremdenfuehrer.png" />
+      <Category Name="Tauch-Guide" schemaorg="ProfessionalService" Pin="https://pins.tourdata.at/poi_fremdenfuehrer.png" />
+      <Category Name="Wander-Guide" schemaorg="ProfessionalService" Pin="https://pins.tourdata.at/poi_fremdenfuehrer.png" />
+      <Category Name="Sonstige Fremden-/Freizeitführer" schemaorg="ProfessionalService" Pin="https://pins.tourdata.at/poi_fremdenfuehrer.png" />
+    </Category>
+    <Category Name="Notdienste" Expanded="false" Level="2">
+      <Category Name="Bergrettung" schemaorg="EmergencyService" Pin="https://pins.tourdata.at/poi_notdienste.png" />
+      <Category Name="Feuerwehr" schemaorg="FireStation" Pin="https://pins.tourdata.at/poi_feuerwehr.png" />
+      <Category Name="Pannendienst" schemaorg="EmergencyService" Pin="https://pins.tourdata.at/poi_notdienste.png" />
+      <Category Name="Polizei" schemaorg="PoliceStation" Pin="https://pins.tourdata.at/poi_polizei.png" />
+      <Category Name="Rettung" schemaorg="EmergencyService" Pin="https://pins.tourdata.at/poi_rettung.png" />
+      <Category Name="Tierarzt" schemaorg="VeterinaryCare" Pin="https://pins.tourdata.at/poi_tierarzt.png" />
+      <Category Name="Wasser-Rettung" schemaorg="EmergencyService" Pin="https://pins.tourdata.at/poi_notdienste.png" />
+      <Category Name="Sonstiger Notdienst" schemaorg="EmergencyService" Pin="https://pins.tourdata.at/poi_notdienste.png" />
+    </Category>
+    <Category Name="Öffentliche Einrichtungen" Expanded="false" Level="2">
+      <Category Name="Fußgängerzone" schemaorg="CivicStructure" Pin="https://pins.tourdata.at/poi_fussgaengerzone.png" />
+      <Category Name="Kinderspielplatz" schemaorg="Playground" Pin="https://pins.tourdata.at/poi_kinderspielplatz.png" />
+      <Category Name="Öffentliche WC-Anlage" schemaorg="CivicStructure" Pin="https://pins.tourdata.at/poi_wcanlage.png" />
+      <Category Name="Park" schemaorg="Park" Pin="https://pins.tourdata.at/poi_park.png" />
+      <Category Name="Rastplatz/Picknickplatz" schemaorg="" Pin="https://pins.tourdata.at/poi_park.png" />
+      <Category Name="Sport-/Mehrzweckhalle" schemaorg="StadiumOrArena" Pin="https://pins.tourdata.at/poi_sporthalle.png" />
+      <Category Name="Sonstige öffentliche Einrichtung" schemaorg="CivicStructure" Pin="https://pins.tourdata.at/poi_oeffentliche.png" />
+    </Category>
+    <Category Name="Touristische Einrichtung" Expanded="false" Level="2">
+      <Category Name="Eventorganisation" schemaorg="TravelAgency" Pin="https://pins.tourdata.at/poi_eventorganisation.png" />
+      <Category Name="Incoming-Reisebüro (bietet Reisen in OÖ an)" schemaorg="TravelAgency" Pin="https://pins.tourdata.at/poi_tourismus.png" />
+      <Category Name="Kartenbüro" schemaorg="TravelAgency" Pin="https://pins.tourdata.at/poi_kartenbuero.png" />
+      <Category Name="Nationalpark- oder Naturpark-Infostelle" schemaorg="TouristInformationCenter" Pin="https://pins.tourdata.at/poi_tourismus.png" />
+      <Category Name="Reisebüro" schemaorg="TravelAgency" Pin="https://pins.tourdata.at/poi_tourismus.png" />
+      <Category Name="Tourismusverband/-organisation" schemaorg="TouristInformationCenter" Pin="https://pins.tourdata.at/poi_tourismus.png" />
+      <Category Name="Tourist-Information/Infopunkt/Infostelle" schemaorg="TouristInformationCenter" Pin="https://pins.tourdata.at/poi_tourismus.png" />
+    </Category>
+    <Category Name="Verkehr" Expanded="false" Level="2">
+      <Category Name="Anlegestelle (Boot)" schemaorg="CivicStructure" Pin="https://pins.tourdata.at/poi_anlegestelle_boot.png" />
+      <Category Name="Anlegestelle (Schiff)" schemaorg="CivicStructure" Pin="https://pins.tourdata.at/poi_anlegestelle_schiff.png" />
+      <Category Name="Bahnhof" schemaorg="TrainStation" Pin="https://pins.tourdata.at/poi_bahnhof.png" />
+      <Category Name="Bergbahnen/Lifte" schemaorg="CivicStructure" Pin="https://pins.tourdata.at/poi_bergbahn.png" />
+      <Category Name="Bus-Haltestelle" schemaorg="BusStation" Pin="https://pins.tourdata.at/poi_bushaltestelle.png" />
+      <Category Name="Bus-Parkplatz" schemaorg="ParkingFacility" Pin="https://pins.tourdata.at/poi_parken_bus.png" />
+      <Category Name="Bus-Unternehmen" schemaorg="TravelAgency" Pin="https://pins.tourdata.at/poi_bushaltestelle.png" />
+      <Category Name="Fähre" schemaorg="CivicStructure" Pin="https://pins.tourdata.at/poi_faehre.png" />
+      <Category Name="Flugplatz" schemaorg="Airport" Pin="https://pins.tourdata.at/poi_flugplatz.png" />
+      <Category Name="Grenzübergang (Auto)" schemaorg="CivicStructure" Pin="https://pins.tourdata.at/poi_grenzauto.png" />
+      <Category Name="Grenzübergang (Fußgänger)" schemaorg="CivicStructure" Pin="https://pins.tourdata.at/poi_grenzfuss.png" />
+      <Category Name="Grenzübergang (Rad)" schemaorg="CivicStructure" Pin="https://pins.tourdata.at/poi_grenzrad.png" />
+      <Category Name="Mautstation" schemaorg="CivicStructure" Pin="https://pins.tourdata.at/poi_mautstation.png" />
+      <Category Name="Parkmöglichkeit (gratis)" schemaorg="ParkingFacility" Pin="https://pins.tourdata.at/poi_parkmoeglichkeit.png" />
+      <Category Name="Parkmöglichkeit (kostenpflichtig)" schemaorg="ParkingFacility" Pin="https://pins.tourdata.at/poi_parkmoeglichkeit.png" />
+      <Category Name="Parkmöglichkeit für Pferdeanhänger" schemaorg="ParkingFacility" Pin="https://pins.tourdata.at/poi_pferdeanhaenger.png" />
+      <Category Name="Tankstelle" schemaorg="GasStation" Pin="https://pins.tourdata.at/poi_tankstelle.png" />
+      <Category Name="E-Tankstelle/Ladestation" schemaorg="GasStation" Pin="https://pins.tourdata.at/poi_etankstelle.png" />
+      <Category Name="Sonstige Verkehrs-Einrichtung" schemaorg="CivicStructure" Pin="https://pins.tourdata.at/poi_verkehr.png" />
+    </Category>
+  </Category>
+  <Category Name="Interaktiv" Expanded="false" Level="1">
+    <Category Name="Infosäule" schemaorg="BroadcastService" Pin="https://pins.tourdata.at/poi_tourismus.png" />
+    <Category Name="Podcast" schemaorg="BroadcastService" Pin="https://pins.tourdata.at/poi_podcast.png" />
+    <Category Name="Videocast" schemaorg="BroadcastService" Pin="https://pins.tourdata.at/poi_videocast.png" />
+    <Category Name="Webcam" schemaorg="BroadcastService" Pin="https://pins.tourdata.at/poi_webcam.png" />
+  </Category>
+  <Category Name="Kultureinrichtungen" Expanded="false" Level="1">
+    <Category Name="Ausgrabung" schemaorg="TouristAttraction" Pin="https://pins.tourdata.at/poi_kultur.png" />
+    <Category Name="Bühnen" Expanded="true" Level="2">
+      <Category Name="Freilichtbühne" schemaorg="PerformingArtsTheater" Pin="https://pins.tourdata.at/poi_theater.png" />
+      <Category Name="Kleinbühne/Club" schemaorg="PerformingArtsTheater" Pin="https://pins.tourdata.at/poi_buehne.png" />
+      <Category Name="Konzerthaus/Veranstaltungshaus" schemaorg="PerformingArtsTheater" Pin="https://pins.tourdata.at/poi_buehne.png" />
+      <Category Name="Opernhaus" schemaorg="MusicVenue" Pin="https://pins.tourdata.at/poi_buehne.png" />
+      <Category Name="Theater" schemaorg="PerformingArtsTheater" Pin="https://pins.tourdata.at/poi_theater.png" />
+      <Category Name="Sonstige Bühne" schemaorg="PerformingArtsTheater" Pin="https://pins.tourdata.at/poi_buehne.png" />
+    </Category>
+    <Category Name="Erlebnisausstellung" schemaorg="TouristAttraction" Pin="https://pins.tourdata.at/poi_kultur.png" />
+    <Category Name="Freilichtmuseum" schemaorg="Museum" Pin="https://pins.tourdata.at/poi_museum_sammlung.png" />
+    <Category Name="Galerie" schemaorg="ArtGallery" Pin="https://pins.tourdata.at/poi_galerie.png" />
+    <Category Name="Gedenkstätte" schemaorg="TouristAttraction" Pin="https://pins.tourdata.at/poi_kultur.png" />
+    <Category Name="Kino" schemaorg="MovieTheater" Pin="https://pins.tourdata.at/poi_kino.png" />
+    <Category Name="Museum/Sammlung" schemaorg="Museum" Pin="https://pins.tourdata.at/poi_museum_sammlung.png" />
+    <Category Name="Sonstige Kultureinrichtung" schemaorg="EventVenue" Pin="https://pins.tourdata.at/poi_kultur.png" />
+  </Category>
+  <Category Name="Kur- und Gesundheitseinrichtungen" Level="1">
+    <Category Name="Arzt/Zahnarzt" schemaorg="MedicalOrganization" Pin="https://pins.tourdata.at/poi_arzt.png" />
+    <Category Name="Krankenhaus" schemaorg="Hospital" Pin="https://pins.tourdata.at/poi_krankenhaus.png" />
+    <Category Name="Kuranstalt" schemaorg="MedicalClinic" Pin="https://pins.tourdata.at/poi_kuranstalt.png" />
+    <Category Name="Therme/Heilbad" schemaorg="DaySpa" Pin="https://pins.tourdata.at/poi_therme.png" />
+    <Category Name="Wellnesslandschaft" schemaorg="DaySpa" Pin="https://pins.tourdata.at/poi_wellnesslandschaft.png" />
+    <Category Name="Sonstige Kur- und Gesundheits-Einrichtung" schemaorg="MedicalOrganization" Pin="https://pins.tourdata.at/poi_sonstigekureinrichtung.png" />
+  </Category>
+  <Category Name="Sehenswürdigkeiten" Level="1">
+    <Category Name="Ausflugsschiff-Fahrt/Nostalgiebahnen" Expanded="false" Level="2">
+      <Category Name="Ausflugsschiff-Fahrt" schemaorg="TravelAgency" Pin="https://pins.tourdata.at/poi_ausflugsschiffahrt.png" />
+      <Category Name="Nostalgiebahn/Freizeitbahn" schemaorg="TravelAgency" Pin="https://pins.tourdata.at/poi_nostalgiebahn.png" />
+    </Category>
+    <Category Name="Bauwerke/Gebäude" Expanded="false" Level="2">
+      <Category Name="Archäologische Stätte" schemaorg="LandmarksOrHistoricalBuildings" Pin="https://pins.tourdata.at/poi_archaeologische_staette.png" />
+      <Category Name="Brücke/Hängebrücke" schemaorg="Bridge" Pin="https://pins.tourdata.at/poi_bruecke.png" />
+      <Category Name="Brunnen/Wasserstelle" schemaorg="BodyOfWater" Pin="https://pins.tourdata.at/poi_wasserstelle-brunnen.png" />
+      <Category Name="Burg" schemaorg="LandmarksOrHistoricalBuildings" Pin="https://pins.tourdata.at/poi_burg.png" />
+      <Category Name="Denkmal" schemaorg="LandmarksOrHistoricalBuildings" Pin="https://pins.tourdata.at/poi_denkmal.png" />
+      <Category Name="Kapelle/Marterl" schemaorg="PlaceOfWorship" Pin="https://pins.tourdata.at/poi_kapelle.png" />
+      <Category Name="Kirche/Dom/Basilika" schemaorg="Church" Pin="https://pins.tourdata.at/poi_kirche.png" />
+      <Category Name="Kloster/Stift" schemaorg="PlaceOfWorship" Pin="https://pins.tourdata.at/poi_kloster.png" />
+      <Category Name="Mühle" schemaorg="LandmarksOrHistoricalBuildings" Pin="https://pins.tourdata.at/poi_muehle.png" />
+      <Category Name="Platz" schemaorg="TouristAttraction" Pin="https://pins.tourdata.at/poi_denkmal.png" />
+      <Category Name="Ruine" schemaorg="LandmarksOrHistoricalBuildings" Pin="https://pins.tourdata.at/poi_ruine.png" />
+      <Category Name="Schloss" schemaorg="LandmarksOrHistoricalBuildings" Pin="https://pins.tourdata.at/poi_schloss.png" />
+      <Category Name="Sternwarte" schemaorg="TouristAttraction" Pin="https://pins.tourdata.at/poi_sternwarte.png" />
+      <Category Name="Sonstiges Bauwerk/Gebäude" schemaorg="TouristAttraction" Pin="https://pins.tourdata.at/poi_sonstige_bauwerk_museum.png" />
+    </Category>
+    <Category Name="Natur-Sehenswürdigkeiten" Expanded="false" Level="2">
+      <Category Name="Aussichtswarte/Aussichtspunkt/Aussichtsturm" schemaorg="CivicStructure" Pin="https://pins.tourdata.at/poi_aussichtswarte.png" />
+      <Category Name="Geotop (erdgeschichtliches Gebilde)" schemaorg="Landform" Pin="https://pins.tourdata.at/poi_geotop.png" />
+      <Category Name="Gipfel" schemaorg="Mountain" Pin="https://pins.tourdata.at/poi_gipfel.png" />
+      <Category Name="Höhle/Grotte" schemaorg="Landform" Pin="https://pins.tourdata.at/poi_hoehle.png" />
+      <Category Name="Klamm/Schlucht" schemaorg="Landform" Pin="https://pins.tourdata.at/poi_klamm.png" />
+      <Category Name="Naturdenkmal" schemaorg="LandmarksOrHistoricalBuildings" Pin="https://pins.tourdata.at/poi_naturdenkmal.png" />
+      <Category Name="Nationalpark/Naturpark/Naturschutzgebiet" schemaorg="Park" Pin="https://pins.tourdata.at/poi_naturpark.png" />
+      <Category Name="See/Teich" schemaorg="LakeBodyOfWater" Pin="https://pins.tourdata.at/poi_freibad.png" />
+      <Category Name="Stausee/Kraftwerk" schemaorg="Resevoir" Pin="https://pins.tourdata.at/poi_kraftwerk.png" />
+      <Category Name="Tierpark/Wildpark/Zoo" schemaorg="Zoo" Pin="https://pins.tourdata.at/poi_zoo.png" />
+      <Category Name="Wasserfall" schemaorg="Waterfall" Pin="https://pins.tourdata.at/poi_wasserfall.png" />
+      <Category Name="Sonstige Natur-Sehenswürdigkeit" schemaorg="Landform" Pin="https://pins.tourdata.at/poi_sonstige_natur.png" />
+    </Category>
+    <Category Name="Schaubetriebe/Bergwerke" Expanded="false" Level="2">
+      <Category Name="Schaubergwerk" schemaorg="TouristAttraction" Pin="https://pins.tourdata.at/poi_schaubergwerk.png" />
+      <Category Name="Industrieller Schaubetrieb" schemaorg="TouristAttraction" Pin="https://pins.tourdata.at/poi_industr_schaubetrieb.png" />
+      <Category Name="Handwerklicher Schaubetrieb" schemaorg="TouristAttraction" Pin="https://pins.tourdata.at/poi_handwerk_schaubetrieb.png" />
+      <Category Name="Kulinarischer Schaubetrieb" schemaorg="TouristAttraction" Pin="https://pins.tourdata.at/poi_kulinar_schaubetrieb.png" />
+      <Category Name="Sonstiger Schaubetrieb" schemaorg="TouristAttraction" Pin="https://pins.tourdata.at/poi_sonstiger_schaubetrieb.png" />
+    </Category>
+  </Category>
+  <Category Name="Sporteinrichtungen" Level="1">
+    <Category Name="Sportschulen" Expanded="false" Level="2">
+      <Category Name="Alpinschule (Wandern/Klettern)" schemaorg="EducationalOrganization" Pin="https://pins.tourdata.at/poi_sportschule.png" />
+      <Category Name="Golfschule" schemaorg="EducationalOrganization" Pin="https://pins.tourdata.at/poi_sportschule.png" />
+      <Category Name="Langlaufschule" schemaorg="EducationalOrganization" Pin="https://pins.tourdata.at/poi_sportschule.png" />
+      <Category Name="Reitschule" schemaorg="EducationalOrganization" Pin="https://pins.tourdata.at/poi_sportschule.png" />
+      <Category Name="Segel-/Kiteschule" schemaorg="EducationalOrganization" Pin="https://pins.tourdata.at/poi_sportschule.png" />
+      <Category Name="Skischule" schemaorg="EducationalOrganization" Pin="https://pins.tourdata.at/poi_sportschule.png" />
+      <Category Name="Surfschule" schemaorg="EducationalOrganization" Pin="https://pins.tourdata.at/poi_sportschule.png" />
+      <Category Name="Tanzschule" schemaorg="EducationalOrganization" Pin="https://pins.tourdata.at/poi_sportschule.png" />
+      <Category Name="Tauchschule" schemaorg="EducationalOrganization" Pin="https://pins.tourdata.at/poi_sportschule.png" />
+      <Category Name="Tennisschule" schemaorg="EducationalOrganization" Pin="https://pins.tourdata.at/poi_sportschule.png" />
+      <Category Name="Sonstige Sportschule" schemaorg="EducationalOrganization" Pin="https://pins.tourdata.at/poi_sportschule.png" />
+    </Category>
+    <Category Name="Flugsport-Einrichtungen" Expanded="false" Level="2">
+      <Category Name="Absprungplatz" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_absprungplatz.png" />
+      <Category Name="Ballon-Basis" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_ballon.png" />
+      <Category Name="Drachenflug-Basis" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_flugsporteinrichtung.png" />
+      <Category Name="Helikopter-Basis" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_hubschrauber.png" />
+      <Category Name="Paragleit-Basis" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_paragleitbasis.png" />
+      <Category Name="Fallschirmsprunganbieter" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_fallschirm.png" />
+      <Category Name="Segelflugplatz" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_flugplatz.png" />
+      <Category Name="Sonstige Flugsport-Einrichtung" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_flugsporteinrichtung.png" />
+    </Category>
+    <Category Name="Freizeitsport-Einrichtungen" Expanded="false" Level="2">
+      <Category Name="Asphaltstock-Bahn" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_freizeit-einrichtungen.png" />
+      <Category Name="Badminton-Feld" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_badminton.png" />
+      <Category Name="Basketballplatz" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_basketball.png" />
+      <Category Name="Beach-Volleyballplatz" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_beachvolleyball.png" />
+      <Category Name="Bikepark" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_bikepark.png" />
+      <Category Name="Bogen-Parcours" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_bogenschiessen.png" />
+      <Category Name="Bogen-Sporthalle" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_bogenschiessen.png" />
+      <Category Name="Bowlingbahn" schemaorg="BowlingAlley" Pin="https://pins.tourdata.at/poi_kegel-bowlingbahn.png" />
+      <Category Name="Bungee Jumping Basis" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_bungee.png" />
+      <Category Name="Fahrstall" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_fahrstall.png" />
+      <Category Name="Fischwasser" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_fischwasser.png" />
+      <Category Name="Fitness-Center" schemaorg="HealthClub" Pin="https://pins.tourdata.at/poi_fitness.png" />
+      <Category Name="Fitness-Parcours" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_fitness.png" />
+      <Category Name="Fußballplatz/Stadion" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_fussballplatz.png" />
+      <Category Name="Funpark" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_funpark.png" />
+      <Category Name="Golfplatz" schemaorg="GolfCourse" Pin="https://pins.tourdata.at/poi_golf.png" />
+      <Category Name="Hochseilgarten" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_hochseilgarten.png" />
+      <Category Name="Indoor-Golfanlage" schemaorg="GolfCourse" Pin="https://pins.tourdata.at/poi_golf.png" />
+      <Category Name="Kegelbahn" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_kegel-bowlingbahn.png" />
+      <Category Name="Klettergarten" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_klettern.png" />
+      <Category Name="Kletterhalle" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_klettern.png" />
+      <Category Name="Minigolfplatz" schemaorg="GolfCourse" Pin="https://pins.tourdata.at/poi_minigolf.png" />
+      <Category Name="Nordic-Walking-Park" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_nordic.png" />
+      <Category Name="Outdoor-Anbieter" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_outdooranbieter.png" />
+      <Category Name="Reitstall" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_reitstall.png" />
+      <Category Name="Skate-Park" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_freizeit-einrichtungen.png" />
+      <Category Name="Sommerrodel-Bahn" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_rodelbahn.png" />
+      <Category Name="Sportanlage" schemaorg="StadiumOrArena" Pin="https://pins.tourdata.at/poi_sportanlage.png" />
+      <Category Name="Swin-Golfplatz" schemaorg="GolfCourse" Pin="https://pins.tourdata.at/poi_golf.png" />
+      <Category Name="Squashcenter" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_squash.png" />
+      <Category Name="Tennisplatz" schemaorg="TennisComplex" Pin="https://pins.tourdata.at/poi_tennis.png" />
+      <Category Name="Tennishalle" schemaorg="TennisComplex" Pin="https://pins.tourdata.at/poi_tennis.png" />
+      <Category Name="Yoga" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_freizeit-einrichtungen.png" />
+      <Category Name="Sonstige Freizeitsport-Einrichtung" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_freizeit-einrichtungen.png" />
+    </Category>
+    <Category Name="Wassersport-Einrichtungen" Expanded="false" Level="2">
+      <Category Name="Badegewässer" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_badegewaesser.png" />
+      <Category Name="Badeplatz" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_badegewaesser.png" />
+      <Category Name="Canyoning" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_wassersport-einrichtungen.png" />
+      <Category Name="Erlebnisbad/Freibad/Strandbad" schemaorg="PublicSwimmingPool" Pin="https://pins.tourdata.at/poi_erlebnisbad.png" />
+      <Category Name="Flaschenfüllstation" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_wassersport-einrichtungen.png" />
+      <Category Name="Flussbad" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_wassersport-einrichtungen.png" />
+      <Category Name="Hallenbad" schemaorg="PublicSwimmingPool" Pin="https://pins.tourdata.at/poi_hallenbad.png" />
+      <Category Name="Kajak-Basis" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_wassersport-einrichtungen.png" />
+      <Category Name="Kanu-Basis" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_wassersport-einrichtungen.png" />
+      <Category Name="Kite-Basis" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_kitesurfen.png" />
+      <Category Name="Kite-Spot" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_kitesurfen.png" />
+      <Category Name="Parasailing-Basis" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_wassersport-einrichtungen.png" />
+      <Category Name="Parasailing-Spot" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_wassersport-einrichtungen.png" />
+      <Category Name="Rafting-Basis" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_wassersport-einrichtungen.png" />
+      <Category Name="Ruder-Basis" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_rudern.png" />
+      <Category Name="Segel-Basis" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_segeln.png" />
+      <Category Name="Segel-Club" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_segeln.png" />
+      <Category Name="Surf-Basis" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_windsurf-basis.png" />
+      <Category Name="Surf-Spot" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_windsurf-basis.png" />
+      <Category Name="Tauch-Basis" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_tauchen.png" />
+      <Category Name="Tauchgebiet/-einstiegsstelle" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_tauchen.png" />
+      <Category Name="Tube Riding-Basis" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_wassersport-einrichtungen.png" />
+      <Category Name="Wasserski-/Wakeboard-Basis" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_wasserski.png" />
+      <Category Name="Sonstige Wassersport-Einrichtung" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_wassersport-einrichtungen.png" />
+    </Category>
+    <Category Name="Wintersport-Einrichtungen" Expanded="false" Level="2">
+      <Category Name="Biathlon-Zentrum" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_wintersport-einrichtungen.png" />
+      <Category Name="Eislauf-Platz" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_eislaufplatz.png" />
+      <Category Name="Eislauf-Halle" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_eislaufplatz.png" />
+      <Category Name="Eisstock-Bahn" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_eisstock.png" />
+      <Category Name="Freestyle-Park" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_wintersport-einrichtungen.png" />
+      <Category Name="Langlaufgebiet" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_langlaufen.png" />
+      <Category Name="Rodelbahn" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_rodelbahn.png" />
+      <Category Name="Skigebiet" schemaorg="SkiResort" Pin="https://pins.tourdata.at/poi_skifahren.png" />
+      <Category Name="Skisprung-Schanze" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_skispringen.png" />
+      <Category Name="Sonstige Wintersport-Einrichtung" schemaorg="SportsActivityLocation" Pin="https://pins.tourdata.at/poi_wintersport-einrichtungen.png" />
+    </Category>
+  </Category>
+  <Category Name="Verein" schemaorg="Organization" Pin="https://pins.tourdata.at/poi_verein.png" Level="1" />
+  <Category Name="Verleihe" Level="1">
+    <Category Name="Fahrzeuge" schemaorg="AutoRental" Pin="https://pins.tourdata.at/poi_verleihe_fahrzeuge.png" />
+    <Category Name="Sportgeräte (Flugsport)" schemaorg="SportingGoodsStore" Pin="https://pins.tourdata.at/poi_verleih_sport_flug.png" />
+    <Category Name="Sportgeräte (Freizeitsport)" schemaorg="SportingGoodsStore" Pin="https://pins.tourdata.at/poi_verleih_sport_freizeit.png" />
+    <Category Name="Sportgeräte (Wassersport)" schemaorg="SportingGoodsStore" Pin="https://pins.tourdata.at/poi_verleih_sport_wasser.png" />
+    <Category Name="Sportgeräte (Wintersport)" schemaorg="SportingGoodsStore" Pin="https://pins.tourdata.at/poi_verleih_sport_winter.png" />
+    <Category Name="Sonstige Verleihe" schemaorg="Store" Pin="https://pins.tourdata.at/poi_sonstigeverleihe.png" />
+  </Category>
+</Categories>
