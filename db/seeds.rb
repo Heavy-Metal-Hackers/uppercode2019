@@ -1,6 +1,10 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 
+# TODO xml importer for soap calls and example data??
+# TODO or just put it here as lists
+
+=begin
 customer = Customer.create(
     ccb_Nummer: 7340303520,
     serviceLevel: 'LVR SL Classic SK4',
@@ -40,4 +44,4 @@ Ticket.create(
     customer: customer,
     active: true
 
-)
+)=end
