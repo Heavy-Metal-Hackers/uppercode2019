@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+<div class="collapsable-area"></div>
+
+<div class="trip-cart-menu-dropdown header-nav-item">Meine Reise</div>
+<div class="trip-cart-menu">
+  <%= render 'trips/sidebar', collapsed: true %>
+</div>
+
+<script>
+    function collapseSidebar() {
+        $('.trip-sidebar').attr('data-collapsed', true);
+        $('.collapsable-area').fadeOut();
+    }
+
+    function expandSidebar() {
+        $('.trip-sidebar').attr('data-collapsed', false);
+        $('.collapsable-area').fadeIn();
+    }
+
+    $('.collapsable-area').click(() => {
+        collapseSidebar();
+    });
+
+    $('.trip-cart-menu-dropdown').click(() => {
+        expandSidebar();
+    });
+
+    collapseSidebar();
+</script>

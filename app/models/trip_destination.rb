@@ -1,15 +1,13 @@
-class CategorySet < ActiveRecord::Base
-  has_many :categories
-
+class TripDestination < ActiveRecord::Base
+  belongs_to :trip
+  has_one :customer, through: :trip
   include PgSearch
 
-  # fields:
-  # type (numerical),
-  # name (example: POI or Touren)
-  # TODO name must be retrieved via i18n
+  # TODO has a single marker and a datetime
 
   def to_s
-    name.to_s
+    # TODO
+    'trip_destination ' + id
   end
 
   def set_inactive(user = nil)
@@ -49,7 +47,7 @@ class CategorySet < ActiveRecord::Base
   end
 
   pg_search_scope :full_search,
-    :against => [:name],
+    :against => [],
     :using => {
       :tsearch => {:prefix => true},
       :dmetaphone => {},

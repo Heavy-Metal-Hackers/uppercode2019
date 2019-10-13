@@ -1,0 +1,17 @@
+<%# TODO click on card makes assistant bot appear %>
+
+<%= render 'trip_destinations/card',
+           id: 'suggestion',
+           type: type,
+           time: '',
+           title: title,
+           details: details,
+           address: '',
+           actions: [{
+                         title: 'Vorschläge anzeigen',
+                         link: type == 'food' ?
+                                   'https://www.oberoesterreich.at/essen-trinken.html' :
+                                   'https://www.oberoesterreich.at/aktivitaeten.html'
+                         # TODO pass search query to action link
+                     }]
+%>

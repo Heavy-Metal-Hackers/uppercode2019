@@ -1,0 +1,54 @@
+<!-- TODO destination-cards as own partial of TripDestination class -->
+
+<div class="destination-feed">
+  <div class="destination-day">
+    <div class="destination-date">Montag 01.08</div>
+    <div class="destinations">
+      <%= render 'trip_destinations/card',
+                 id: 1,
+                 type: 'hotel',
+                 time: 'Check-In 12:00',
+                 title: 'Hotel Seeblick',
+                 details: 'Unterkunft, Halbpension',
+                 address: 'Bergstraße 62, 2131 Linzdord',
+                 actions: []
+      %>
+      <%= render 'trip_destinations/card',
+                 id: 2,
+                 type: 'food',
+                 time: '16:00 - 18:00',
+                 title: 'Zum goldenen Adler',
+                 details: 'Gaststätte, Rustikal',
+                 address: 'Zur Talsperre 4, 2131 Linzdorf',
+                 actions: [{
+                               title: 'Reservierung notwendig',
+                               link: 'https://www.oberoesterreich.at/tourdata-listen/gastronomie/alle-gastronomiebetriebe/oesterreich-gastronomie/detail/160077/cuisino-das-casino-restaurant.html'
+                           }]
+      %>
+      <%= render 'trip_destinations/suggestion_card',
+                 title: 'Freizeit und Aktivitäten',
+                 details: 'Sie haben noch keine Aktivitäten geplant',
+                 type: 'activity'
+      %>
+    </div>
+  </div>
+  <div class="destination-day">
+    <div class="destination-date">Dienstag 02.08</div>
+    <div class="destinations">
+      <%= render 'trip_destinations/card',
+                 id: 45,
+                 type: 'activity',
+                 time: '09:00 - 16:00',
+                 title: 'Waldsteig zum Steinberg',
+                 details: 'Aktivität, Wandern',
+                 address: 'Zur Talsperre 4, 2131 Linzdorf',
+                 actions: []
+      %>
+      <%= render 'trip_destinations/suggestion_card',
+                 title: 'Restaurant oder Gaststätte',
+                 details: 'Sie haben noch kein Mittagessen geplant',
+                 type: 'food'
+      %>
+    </div>
+  </div>
+</div>

@@ -1,7 +1,7 @@
 class Customer < ActiveRecord::Base
-  has_many :tickets
-  has_many :contact_people
-  belongs_to :standardAnsprechpartner, class_name: 'ContactPerson'
+  has_many :trip_assistant_instances
+  has_many :trips
+  has_many :chats
   include PgSearch
 
   def to_s

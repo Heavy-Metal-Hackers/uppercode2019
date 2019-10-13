@@ -1,0 +1,11 @@
+const LinkUtils = {
+    openInternalLink: function(link) {
+        if ($('#main-page-frame').length) {
+            // TODO store current page in cookies
+            $('#main-page-frame').attr('src', link);
+            if (typeof collapseSidebar === 'function') collapseSidebar();
+            return;
+        }
+        window.open(link, '_self');
+    }
+}

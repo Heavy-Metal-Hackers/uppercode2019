@@ -1,3 +1,5 @@
-<div class="content">
+<div class="content"
+     data-fullscreen="<%= if defined?(fullscreen) then fullscreen end %>"
+     data-padded="<%= if defined?(padded) then padded end %>">
   <%= yield %>
 </div>

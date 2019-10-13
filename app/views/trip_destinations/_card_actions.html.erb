@@ -1,0 +1,5 @@
+<div class="destination-actions">
+  <% actions.each do |action| %>
+    <div class="destination-action" onclick="LinkUtils.openInternalLink('<%= action[:link] %>')"><%= action[:title] %></div>
+  <% end %>
+</div>

@@ -1,6 +1,7 @@
 class Category < ActiveRecord::Base
-  belongs_to :parent_category, class_name: :Category
+  belongs_to :parent_category, class_name: 'Category'
   belongs_to :category_set
+  has_many :sub_categories, class_name: 'Category'
 
   include PgSearch
 

@@ -1,0 +1,10 @@
+<div class="destination-card" data-destination-id="<%= id %>" data-destination-type="<%= type %>">
+  <div class="destination-image"></div>
+  <div class="destination-info">
+    <div class="destination-time"><%= time %></div>
+    <div class="destination-title"><%= title %></div>
+    <div class="destination-details"><%= details %></div>
+    <div class="destination-address"><%= address %></div>
+    <%= render 'trip_destinations/card_actions', actions: actions %>
+  </div>
+</div>

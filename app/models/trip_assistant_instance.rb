@@ -1,9 +1,12 @@
-class ContactPerson < ActiveRecord::Base
+class TripAssistantInstance < ActiveRecord::Base
   belongs_to :customer
+  belongs_to :chat
+  belongs_to :trip
   include PgSearch
 
   def to_s
-    name
+    # TODO
+    'trip assistant instance ' + id
   end
 
   def set_inactive(user = nil)
@@ -43,7 +46,7 @@ class ContactPerson < ActiveRecord::Base
   end
 
   pg_search_scope :full_search,
-    :against => [:name],
+    :against => [],
     :using => {
       :tsearch => {:prefix => true},
       :dmetaphone => {},

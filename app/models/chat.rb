@@ -1,6 +1,7 @@
 class Chat < ActiveRecord::Base
   belongs_to :customer
-  belongs_to :contact_person
+  has_one :trip_assistant_instance
+  has_many :chat_nodes
   include PgSearch
 
   def to_s

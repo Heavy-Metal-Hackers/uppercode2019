@@ -50,6 +50,11 @@ gem 'meta-tags'
 # https://github.com/watson-developer-cloud/ruby-sdk
 gem 'ibm_watson'
 
+# https://github.com/sparklemotion/nokogiri
+gem 'nokogiri'
+
+gem 'leaflet-rails'
+
 group :production do
   # stub
 end

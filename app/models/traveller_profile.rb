@@ -1,15 +1,11 @@
-class CategorySet < ActiveRecord::Base
-  has_many :categories
-
+class TravellerProfile < ActiveRecord::Base
+  belongs_to :customer
   include PgSearch
 
-  # fields:
-  # type (numerical),
-  # name (example: POI or Touren)
-  # TODO name must be retrieved via i18n
+  # TODO stores all the preferences of a user like travelling alone or with family, lkikes wellness or action etc
 
   def to_s
-    name.to_s
+    'TravellerProfile of' + customer
   end
 
   def set_inactive(user = nil)
@@ -49,7 +45,7 @@ class CategorySet < ActiveRecord::Base
   end
 
   pg_search_scope :full_search,
-    :against => [:name],
+    :against => [],
     :using => {
       :tsearch => {:prefix => true},
       :dmetaphone => {},
