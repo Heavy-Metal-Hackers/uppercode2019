@@ -691,6 +691,7 @@ button {
 .last-trips {
     display: flex;
     margin-bottom: 24px;
+    flex-wrap: wrap;
 }
 
 .trip-card {
@@ -775,6 +776,92 @@ button {
 [data-trip-id="ADD_CUSTOM"] .trip-card-image {
     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNjQiIGhlaWdodD0iNjQiCnZpZXdCb3g9IjAgMCAxMjggMTI4IgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik05LDY0YzAsMzAuNCwyNC42LDU1LDU1LDU1czU1LTI0LjYsNTUtNTVTOTQuNCw5LDY0LDljLTYuNSwwLTEyLjgsMS4xLTE4LjYsMy4yQzI0LjIsMTkuOCw5LDQwLjEsOSw2NHoiPjwvcGF0aD48cGF0aCBmaWxsPSIjNzFjMmZmIiBkPSJNNzQuOCA3M2MtMS41IDIuMSAyLjEgNi41IDYuNCA5LjcgMy44IDIuOCA4LjEgNC44IDEwLjQgMy44IDguMy0zLjkgMTMuNy0xMiAxMy43LTE1cy0zLjktOC44LTE3LjIuMkM4NC40IDc0LjQgNzcuNyA2OSA3NC44IDczek0xMTcuOSA1Mi45QzExNCAzNCAxMDAuNCAxOC42IDgyLjYgMTIuMmMtLjEgMC0uMi0uMS0uMi0uMWwuMiAxMC42YzAgMi43LTEuNiA1LjItNC4xIDYuMy01LjUgMi40LTExIDEuMS0xMy4zIDcuNEM2My4zIDQxLjEgNjguMyA1NCA3NC40IDU0YzcuNyAwIDExLjQtMTUuNSAxMy43LTE1LjUgMS41IDAgMy44IDQuNyA2LjUgOC4yIDEuOCAyLjQgNC42IDMuNyA3LjYgMy43aDUuMUwxMTcuOSA1Mi45ek00NC4yIDc0LjVjLS40LTMuNyA0LjQtNi41IDcuMy05LjRzMy44LTcuNCAyLjMtMTBDNDkgNDYuNCAzNy42IDUxIDM2LjUgNjAuMWMtLjIgMS42LS42IDMuMS0xLjEgNC42TTMzLjQgNzQuNmMtLjctMS40LTIuNS0xLjYtMy41LS41IDAgMCAwIDAgMCAwLTIuOCAyLjgtOC4zIDEuMy05LjgtMi44LTEuNy00LjYgNC4yLTYuMyAzLjMtMTIuMi0uMi0xLjYtMS45LTIuNC00LTIuN2wtOS45LjRDOS4yIDU5LjEgOSA2MS41IDkgNjRjMCAxMi4zIDQgMjMuNiAxMC45IDMyLjggMCAwIDcuOSA3LjQgNy44IDguNWwwIDBjMy44IDMuMyA5LjMgNCAxMy43IDEuNiAxLjktMSAzLjgtMi4zIDYtMy43LjctLjUgMS4zLTEgMS44LTEuNi44LS44LjgtMi4xLjEtMy0uMy0uNC0uNy0uOC0xLTEuMkM0MS45IDg5LjkgMzcgODIgMzMuNCA3NC42eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiM0NDRiNTQiIGQ9Ik05Ny45IDEyMi42Yy0xMi4xIDAtMjkuNS0xMC45LTQ1LjEtMjkuMkMzNy44IDc1LjggMzEuNiA1NS4zIDI5LjYgNDcuM2MtLjQtMS42LjYtMy4yIDIuMi0zLjYgMS42LS40IDMuMi42IDMuNiAyLjIgMS41IDUuOSA3LjMgMjYuNiAyMiA0My44IDE5IDIyLjMgMzkuMiAzMS4xIDQ2LjEgMjUuMyAyLjktMi40IDMuNy03LjYgMi4yLTE0LjZsLS42LTIuOWMtLjMtMS42LjctMy4yIDIuNC0zLjUgMS42LS4zIDMuMi43IDMuNSAyLjRsLjUgMi44YzIgOS4zLjUgMTYuNC00LjIgMjAuM0MxMDQuOCAxMjEuNiAxMDEuNiAxMjIuNiA5Ny45IDEyMi42ek0yOC4yIDQwLjVjLS44IDAtMS41LS4zLTIuMS0uOS0xLjItMS4yLTEuMi0zLjEgMC00LjJsMS42LTEuNlY2YzAtMS43IDEuMy0zIDMtM3MzIDEuMyAzIDN2MjljMCAuOC0uMyAxLjYtLjkgMi4xbC0yLjUgMi41QzI5LjggNDAuMiAyOSA0MC41IDI4LjIgNDAuNXoiPjwvcGF0aD48cGF0aCBmaWxsPSIjNDQ0YjU0IiBkPSJNMjAuNywzM2MtMC44LDAtMS41LTAuMy0yLjEtMC45Yy0xLjItMS4yLTEuMi0zLjEsMC00LjJsMTAtMTBjMS4yLTEuMiwzLjEtMS4yLDQuMiwwYzEuMiwxLjIsMS4yLDMuMSwwLDQuMmwtMTAsMTBDMjIuMywzMi43LDIxLjUsMzMsMjAuNywzM3oiPjwvcGF0aD48cGF0aCBmaWxsPSIjNDQ0YjU0IiBkPSJNNDAuNyAzM2MtLjggMC0xLjUtLjMtMi4xLS45bC0xMC0xMGMtMS4yLTEuMi0xLjItMy4xIDAtNC4yIDEuMi0xLjIgMy4xLTEuMiA0LjIgMGwxMCAxMGMxLjIgMS4yIDEuMiAzLjEgMCA0LjJDNDIuMyAzMi43IDQxLjUgMzMgNDAuNyAzM3pNNjQgMTIyQzMyIDEyMiA2IDk2IDYgNjRjMC04LjggMS45LTE3LjIgNS43LTI1LjEuNy0xLjUgMi41LTIuMSA0LTEuNCAxLjUuNyAyLjEgMi41IDEuNCA0QzEzLjcgNDguNSAxMiA1Ni4xIDEyIDY0YzAgMjguNyAyMy4zIDUyIDUyIDUyIDEuNyAwIDMgMS4zIDMgM1M2NS43IDEyMiA2NCAxMjJ6Ij48L3BhdGg+PGc+PHBhdGggZmlsbD0iIzQ0NGI1NCIgZD0iTTk3LjIsMTEwLjljLTAuOSwwLTEuOC0wLjQtMi40LTEuMmMtMS0xLjMtMC43LTMuMiwwLjYtNC4yQzEwOC41LDk1LjYsMTE2LDgwLjQsMTE2LDY0YzAtMjguNy0yMy4zLTUyLTUyLTUyYy02LDAtMTEuOSwxLTE3LjYsM2MtMS42LDAuNi0zLjMtMC4zLTMuOC0xLjhjLTAuNi0xLjYsMC4zLTMuMywxLjgtMy44QzUwLjcsNy4xLDU3LjMsNiw2NCw2YzMyLDAsNTgsMjYsNTgsNThjMCwxOC4zLTguNCwzNS4yLTIzLDQ2LjNDOTguNCwxMTAuNyw5Ny44LDExMC45LDk3LjIsMTEwLjl6Ij48L3BhdGg+PC9nPjwvc3ZnPg==');
 }
+
+.profile-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.basic-info-box {
+    border: 1px solid #c4c4c4;
+    padding: 24px 48px;
+    margin-right: 48px;
+}
+
+.profile-avatar {
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    background: lightgrey;
+    margin: auto;
+    margin-bottom: 24px;
+    background-image: url(https://www.thispersondoesnotexist.com/image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.profile-name {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    line-height: 26px;
+    text-align: center;
+}
+
+.profile-preferences {
+    flex: 1;
+    margin-top: 14px;
+    white-space: nowrap;
+}
+
+.profile-preference {
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #3c3c3c;
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    margin-bottom: 14px;
+    cursor: pointer;
+    height: 26px;
+}
+
+.profile-preference:hover:after {
+    content: '✎';
+    font-weight: bold;
+    margin-left: 8px;
+    font-size: 20px;
+    color: #7f7f7f;
+    vertical-align: bottom;
+}
+
+.profile-preference:hover {
+    color: black;
+}
+
+.preference-label {
+    display: inline-block;
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+.profile-preference[data-preference-type="add"] {
+    font-weight: 600;
+}
+
+.profile-preference[data-preference-type="add"]:hover:after {
+    content: '+';
+}
+
+@media(max-width: 768px) {
+    .basic-info-box {
+        margin: auto;
+    }
+    .profile-preferences {
+        margin-top: 42px;
+    }
+}
+
 
 /* ===================== */
 /* ===== Assistant ===== */

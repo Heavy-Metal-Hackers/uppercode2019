@@ -1,5 +1,33 @@
 <div class="profile-category">
   <div class="category-title">Deine Eigenschaften und Vorlieben</div>
+  <div class="profile-wrapper">
+    <div class="basic-info-box">
+      <div class="profile-avatar"></div>
+      <div class="profile-name">Jon Traveller</div>
+    </div>
+    <div class="profile-preferences">
+      <div class="profile-preference" data-preference-type="family" data-preference-value="with_partner">
+        <div class="preference-label">Begleitung</div>
+        Verreist häufig mit dem/r PartnerIn
+      </div>
+      <div class="profile-preference" data-preference-type="language" data-preference-value="german, english, czech">
+        <div class="preference-label">Sprachen</div>
+        Spricht Deutsch, Englisch, Tschechisch
+      </div>
+      <div class="profile-preference" data-preference-type="activity_grade" data-preference-value="high">
+        <div class="preference-label">Aktivitätslevel</div>
+        Hohes Aktivitätslevel, mag Erlebnisreisen
+      </div>
+      <div class="profile-preference" data-preference-type="activities" data-preference-value="cycling, walking, climbing">
+        <div class="preference-label">Aktivitäten</div>
+        Mag Radfahren, Wandern, Klettern
+      </div>
+      <div class="profile-preference" data-preference-type="add">
+        Weitere Eigenschaft hinzufügen
+      </div>
+    </div>
+  </div>
+  <!--
   <div>
     TODO profil mit allen reiserelevanten preferences, z.b. rollifahrer, familie ja nein...
     zeige liste von bereits gesetzten preferences
@@ -14,6 +42,7 @@
 
     TODO startseite der app mit 3 cards zu assistent, meine reise und reiseprofil
   </div>
+  -->
 </div>
 
 <div class="profile-category">
@@ -63,5 +92,12 @@
     max-width: 1200px;
     margin: auto;
     position: relative;
+    padding: 18px 64px;
+  }
+
+  @media(max-width: 768px) {
+    .content {
+      padding: 18px 42px;
+    }
   }
 </style>
