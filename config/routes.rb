@@ -31,6 +31,11 @@ Rails.application.routes.draw do
     get 'trips/:id', :to => "trips#show"
   end
 
+  controller :traveller_profiles do
+    get 'traveller_profiles', :to => "traveller_profiles#index"
+    get 'traveller_profiles/:id', :to => "traveller_profiles#show"
+  end
+
   controller :chats do
     get 'chat_node', :to => "chats#chat_node"
   end

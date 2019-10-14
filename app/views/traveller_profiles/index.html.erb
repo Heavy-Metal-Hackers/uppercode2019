@@ -1,5 +1,67 @@
-TODO profil mit allen reiserelevanten preferences, z.b. rollifahrer, familie ja nein...
-zeige liste von bereits gesetzten preferences
-und darunter "weitere Eigenschaft hinzufügen"
--> klick darauf zeigt auswahlliste aller möglichen profileigenschaften
-man kann eigenschaften jederzeit editieren oder löschen
+<div class="profile-category">
+  <div class="category-title">Deine Eigenschaften und Vorlieben</div>
+  <div>
+    TODO profil mit allen reiserelevanten preferences, z.b. rollifahrer, familie ja nein...
+    zeige liste von bereits gesetzten preferences
+    und darunter "weitere Eigenschaft hinzufügen"
+    -> klick darauf zeigt auswahlliste aller möglichen profileigenschaften
+    man kann eigenschaften jederzeit editieren oder löschen
+
+    angabe wo man schon mal war
+    alle bisherigen ober österreich reisen
+
+    darunter noch die letzten chats darstellen wie bei vodafone
+
+    TODO startseite der app mit 3 cards zu assistent, meine reise und reiseprofil
+  </div>
+</div>
+
+<div class="profile-category">
+  <div class="category-title">Wo du schon warst</div>
+  <div class="category-subtitle">Deine Reisen in Oberösterreich</div>
+  <div class="last-trips">
+    <%= render 'trips/card',
+               id: 1,
+               type: 'trip',
+               date: '20. - 24. Juli',
+               image: 'https://media.tourdata.at/exp/sommer/responsiveTeaserBoxImg/orteinformation/430000877.png',
+               title: 'Linz'
+    %>
+    <%= render 'trips/card',
+               id: 1,
+               type: 'trip',
+               date: '12. - 24. August',
+               image: 'https://media.tourdata.at/exp/sommer/rebrushTeaserBoxImg/orteinformation/430000883.png',
+               title: 'Braunau am Inn'
+    %>
+    <%= render 'trips/card',
+               id: 'NEW',
+               type: 'new',
+               date: '',
+               title: 'Eine neue Reise planen'
+    %>
+  </div>
+  <div class="category-subtitle">Deine Reisen auf der Welt</div>
+  <div class="last-trips">
+    <%= render 'trips/card',
+               id: 1,
+               type: 'custom_trip',
+               date: '01. - 05. Juni',
+               title: 'Barcelona'
+    %>
+    <%= render 'trips/card',
+               id: 'ADD_CUSTOM',
+               type: 'add_custom',
+               date: '',
+               title: 'Deine Reise hinzufügen'
+    %>
+  </div>
+</div>
+
+<style>
+  .content {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+  }
+</style>

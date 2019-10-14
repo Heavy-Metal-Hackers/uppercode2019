@@ -3,7 +3,6 @@ class CreateChats < ActiveRecord::Migration
     create_table :chats do |t|
 
       t.references :customer, index: true
-      t.references :contact_person, index: true
 
       t.datetime :started_at
       
