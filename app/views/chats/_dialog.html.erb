@@ -10,10 +10,92 @@
                direction: 'in',
                timestamp: '' %>
     <%= render 'chats/nodes/chat_node',
+               message: 'Ich möchte erst einmal etwas über dich erfahren.',
+               direction: 'in',
+               timestamp: '',
+               suggestions: [] %>
+    <%= render 'chats/nodes/chat_node',
                message: 'Fangen wir an. Reist du üblicherweise alleine oder in Begleitung?',
                direction: 'in',
                timestamp: '',
                suggestions: ['Alleine', 'Mit meinem/r PartnerIn', 'Mit meiner Familie'] %>
+    <%= render 'chats/nodes/chat_node',
+               message: 'Alleine',
+               direction: 'out',
+               timestamp: '' %>
+    <%= render 'chats/nodes/chat_node',
+               message: 'Alles klar, du reist also alleine.',
+               direction: 'in',
+               timestamp: '',
+               suggestions: [] %>
+    <%= render 'chats/nodes/chat_node',
+               message: 'Bist du eher ein ruhiger Urlauber oder stehst du auf Action?',
+               direction: 'in',
+               timestamp: '',
+               suggestions: ['Ruhig', 'Actionreich'] %>
+    <%= render 'chats/nodes/chat_node',
+               message: 'Actionreich',
+               direction: 'out',
+               timestamp: '' %>
+    <%= render 'chats/nodes/chat_node',
+               message: 'Welches Budget möchtest du für deine Reise ausgeben?',
+               direction: 'in',
+               timestamp: '',
+               suggestions: ['Ökonomisch (< 500€)', 'Gewöhnlich (500 - 1500€)', 'Anspruchvoll (> 1500€)'] %>
+    <%= render 'chats/nodes/chat_node',
+               message: '700€',
+               direction: 'out',
+               timestamp: '' %>
+    <%= render 'chats/nodes/chat_node',
+               message: 'Wunderbar. Ich hätte da dieses Hotel für dich. Wäre das etwas?',
+               direction: 'in',
+               timestamp: '' %>
+    <%= render 'chats/nodes/trip_destination_node',
+               timestamp: '',
+               # TODO location here and let it pop up in background iframe
+               suggestions: ['Das ist gut', 'Ich will etwas anderes'] %>
+    <%= render 'chats/nodes/chat_node',
+               message: 'Das ist gut',
+               direction: 'out',
+               timestamp: '' %>
+    <%= render 'chats/nodes/chat_node',
+               message: 'Großartig. Wann möchtest du anreisen? Ich schaue dann für dich nach verfügbaren Zimmern.',
+               direction: 'in',
+               timestamp: '',
+               suggestions: [] %>
+    <%= render 'chats/nodes/available_dates_node',
+               direction: 'in',
+               timestamp: '' %>
+    <%= render 'chats/nodes/chat_node',
+               message: 'Nächste Woche Dienstag',
+               direction: 'out',
+               timestamp: '' %>
+    <%= render 'chats/nodes/chat_node',
+               message: 'Wie lange möchtest du bleiben?',
+               direction: 'in',
+               timestamp: '',
+               suggestions: [] %>
+    <%= render 'chats/nodes/chat_node',
+               message: '2 Nächte',
+               direction: 'out',
+               timestamp: '' %>
+    <%= render 'chats/nodes/chat_node',
+               message: 'Für deinen gewünschten Zeitraum von Dienstag, den 17. Oktober, bis Donnerstag, 19. Oktober, sind noch 5 Zimmer verfügbar. Der Preis pro Nacht liegt bei 120€ für eine Person.',
+               direction: 'in',
+               timestamp: '',
+               suggestions: ['Buchen', 'Anderer Zeitraum', 'Anderes Hotel'] %>
+    <%= render 'chats/nodes/chat_node',
+               message: 'Buchen',
+               direction: 'out',
+               timestamp: '' %>
+    <%= render 'chats/nodes/chat_node',
+                message: 'Klasse! Deine Buchung habe ich soeben bei deinem Gastgeber bestätigt.',
+                direction: 'in',
+                timestamp: '',
+                suggestions: [] %>
+    <%= render 'chats/nodes/booking_confirmation_node',
+               direction: 'in',
+               timestamp: '' %>
     <%#= render 'chats/nodes/chat_node', message: 'Störung erfolgreich behoben', direction: 'event', timestamp: '' %>
   </div>
   <%= render 'chats/input' %>

@@ -675,7 +675,7 @@ button {
     border-radius: 2px;
     position: absolute;
     top: 18px;
-    right: 18px;
+    right: 52px;
     display: none;
 }
 
@@ -1165,6 +1165,102 @@ button {
     margin-top: -4px;
     margin-bottom: 8px;
     padding-bottom: 0;
+}
+
+.trip-destination-node-wrapper .destination-card {
+    border: 1px solid #bebebe;
+    margin: 0;
+    margin-bottom: 12px;
+    background: white;
+}
+
+.booking-confirmation-node-content {
+    border: 1px solid #bebebe;
+    margin: 0;
+    margin-bottom: 12px;
+    background: white;
+    width: auto;
+    padding: 8px;
+    display: flex;
+    white-space: nowrap;
+}
+
+.booking-confirmation-node-wrapper {
+    display: flex;
+}
+
+.booking-confirmed-icon {
+    display: inline-block;
+    height: 56px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNjQiIGhlaWdodD0iNjQiCnZpZXdCb3g9IjAgMCA2NCA2NCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48bGluZWFyR3JhZGllbnQgaWQ9ImJxSnFKcjdYTVNWZHh2Y2hNeXpYNGEiIHgxPSIzMiIgeDI9IjMyIiB5MT0iNSIgeTI9IjU4Ljk4MSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHNwcmVhZE1ldGhvZD0icmVmbGVjdCI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMWE2ZGZmIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYzgyMmZmIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48cGF0aCBmaWxsPSJ1cmwoI2JxSnFKcjdYTVNWZHh2Y2hNeXpYNGEpIiBkPSJNMzIsNThjLTIuMDQyLDAtMy44MDItMS4yMy00LjU3Ny0yLjk4OGMtMS4zOTEsMS4zMjgtMy40ODcsMS43OTEtNS4zNzMsMS4wMDkgYy0xLjIzMy0wLjUxMS0yLjE5NC0xLjQ3Mi0yLjcwNi0yLjcwNWMtMC4yNDEtMC41ODMtMC4zNjgtMS4xOTQtMC4zODItMS44MDdjLTEuNzkxLDAuNjktMy45MDQsMC4zMTgtNS4zNDctMS4xMjQgYy0xLjQ0My0xLjQ0My0xLjgxOC0zLjU1Ni0xLjEyNS01LjM0N2MtMC42MTItMC4wMTQtMS4yMjMtMC4xNDEtMS44MDYtMC4zODJjLTEuMjMzLTAuNTEyLTIuMTk0LTEuNDczLTIuNzA1LTIuNzA2IGMtMC41MTItMS4yMzQtMC41MTItMi41OTMtMC4wMDEtMy44MjdjMC4yNDItMC41ODMsMC41ODMtMS4xMDQsMS4wMDctMS41NDdDNy4yMjksMzUuOCw2LDM0LjA0MSw2LDMyczEuMjI5LTMuOCwyLjk4NS00LjU3NiBjLTAuNDI0LTAuNDQyLTAuNzY1LTAuOTY0LTEuMDA3LTEuNTQ3Yy0wLjUxMS0xLjIzNC0wLjUxMS0yLjU5MywwLjAwMS0zLjgyN2MwLjUxMS0xLjIzMywxLjQ3Mi0yLjE5NCwyLjcwNS0yLjcwNiBjMC41ODMtMC4yNDEsMS4xOTMtMC4zNjgsMS44MDYtMC4zODJjLTAuNjkzLTEuNzkxLTAuMzE4LTMuOTAzLDEuMTI1LTUuMzQ3YzEuNDQyLTEuNDQxLDMuNTU1LTEuODE3LDUuMzQ3LTEuMTI1IGMwLjAxNC0wLjYxMiwwLjE0MS0xLjIyMywwLjM4Mi0xLjgwNmMwLjUxMi0xLjIzMywxLjQ3My0yLjE5NCwyLjcwNi0yLjcwNWMxLjIzNC0wLjUxMiwyLjU5My0wLjUxMSwzLjgyNy0wLjAwMSBjMC41ODMsMC4yNDIsMS4xMDQsMC41ODMsMS41NDcsMS4wMDdDMjguMiw3LjIyOSwyOS45NTksNiwzMiw2czMuOCwxLjIyOSw0LjU3NiwyLjk4NWMwLjQ0Mi0wLjQyNCwwLjk2NC0wLjc2NSwxLjU0Ny0xLjAwNyBjMS4yMzQtMC41MSwyLjU5My0wLjUxMSwzLjgyNywwLjAwMWMxLjIzMywwLjUxMSwyLjE5NCwxLjQ3MiwyLjcwNiwyLjcwNWMwLjI0MSwwLjU4MywwLjM2OCwxLjE5MywwLjM4MiwxLjgwNiBjMS43OTQtMC42OTIsMy45MDUtMC4zMTYsNS4zNDcsMS4xMjVjMS40NDMsMS40NDMsMS44MTgsMy41NTYsMS4xMjUsNS4zNDdjMC42MTIsMC4wMTQsMS4yMjMsMC4xNDEsMS44MDYsMC4zODIgYzEuMjMzLDAuNTEyLDIuMTk0LDEuNDczLDIuNzA1LDIuNzA2YzAuNTEyLDEuMjM0LDAuNTEyLDIuNTkzLDAuMDAxLDMuODI3Yy0wLjI0MiwwLjU4My0wLjU4MywxLjEwNC0xLjAwNywxLjU0NyBDNTYuNzcxLDI4LjIsNTgsMjkuOTU5LDU4LDMycy0xLjIyOSwzLjgtMi45ODUsNC41NzZjMC40MjQsMC40NDIsMC43NjUsMC45NjQsMS4wMDcsMS41NDdjMC41MTEsMS4yMzQsMC41MTEsMi41OTMtMC4wMDEsMy44MjcgYy0wLjUxMSwxLjIzMy0xLjQ3MiwyLjE5NC0yLjcwNSwyLjcwNmMtMC41ODMsMC4yNDEtMS4xOTMsMC4zNjgtMS44MDYsMC4zODJjMC42OTMsMS43OTEsMC4zMTgsMy45MDMtMS4xMjUsNS4zNDcgYy0xLjQ0MSwxLjQ0MS0zLjU1MywxLjgxOS01LjM0NywxLjEyNGMtMC4wMTQsMC42MTItMC4xNDEsMS4yMjQtMC4zODIsMS44MDdjLTAuNTEyLDEuMjMzLTEuNDczLDIuMTk0LTIuNzA2LDIuNzA1IGMtMS44ODcsMC43ODItMy45ODIsMC4zMTktNS4zNzMtMS4wMDlDMzUuODAyLDU2Ljc3LDM0LjA0Miw1OCwzMiw1OHogTTI3LjA3Niw1MS43MjdMMjksNTIuMTA5VjUzYzAsMS42NTQsMS4zNDYsMywzLDNzMy0xLjM0NiwzLTMgdi0wLjg5MWwxLjkyNC0wLjM4M2wwLjM0MSwwLjgyM2MwLjYzNCwxLjUyOCwyLjM5MywyLjI1OSwzLjkyLDEuNjIzYzAuNzQtMC4zMDcsMS4zMTctMC44ODMsMS42MjMtMS42MjMgYzAuMzA3LTAuNzQsMC4zMDctMS41NTYsMC0yLjI5NmwtMC4zNDEtMC44MjNsMS42MzEtMS4wOWwwLjYzLDAuNjNjMS4xNzEsMS4xNjksMy4wNzQsMS4xNjcsNC4yNDMsMGMxLjE3LTEuMTcsMS4xNy0zLjA3MywwLTQuMjQzIGwtMC42My0wLjYzbDEuMDktMS42MzFsMC44MjMsMC4zNDFjMC43NCwwLjMwNywxLjU1NiwwLjMwNywyLjI5NiwwYzAuNzQtMC4zMDYsMS4zMTYtMC44ODMsMS42MjMtMS42MjMgYzAuNjMzLTEuNTI4LTAuMDk1LTMuMjg3LTEuNjIzLTMuOTJsLTAuODIzLTAuMzQxTDUyLjEwOSwzNUg1M2MxLjY1NCwwLDMtMS4zNDYsMy0zcy0xLjM0Ni0zLTMtM2gtMC44OTFsLTAuMzgzLTEuOTI0bDAuODIzLTAuMzQxIGMxLjUyOC0wLjYzMywyLjI1Ni0yLjM5MiwxLjYyMy0zLjkyYy0wLjMwNy0wLjc0LTAuODgzLTEuMzE3LTEuNjIzLTEuNjIzYy0wLjc0LTAuMzA3LTEuNTU2LTAuMzA3LTIuMjk2LDBsLTAuODIzLDAuMzQxIGwtMS4wOS0xLjYzMWwwLjYzLTAuNjNjMS4xNy0xLjE3LDEuMTctMy4wNzMsMC00LjI0M2MtMS4xNjktMS4xNjktMy4wNzItMS4xNzEtNC4yNDMsMGwtMC42MywwLjYzbC0xLjYzMS0xLjA5bDAuMzQxLTAuODIzIGMwLjMwNy0wLjc0LDAuMzA3LTEuNTU2LDAtMi4yOTZjLTAuMzA2LTAuNzQtMC44ODMtMS4zMTYtMS42MjMtMS42MjNjLTEuNTI4LTAuNjM0LTMuMjg2LDAuMDk0LTMuOTIsMS42MjNsLTAuMzQxLDAuODIzTDM1LDExLjg5MSBWMTFjMC0xLjY1NC0xLjM0Ni0zLTMtM3MtMywxLjM0Ni0zLDN2MC44OTFsLTEuOTI0LDAuMzgzbC0wLjM0MS0wLjgyM2MtMC42MzMtMS41MjktMi4zOTMtMi4yNTYtMy45Mi0xLjYyMyBjLTAuNzQsMC4zMDctMS4zMTcsMC44ODMtMS42MjMsMS42MjNjLTAuMzA3LDAuNzQtMC4zMDcsMS41NTYsMCwyLjI5NmwwLjM0MSwwLjgyM2wtMS42MzEsMS4wOWwtMC42My0wLjYzIGMtMS4xNy0xLjE3MS0zLjA3My0xLjE2OS00LjI0MywwYy0xLjE3LDEuMTctMS4xNywzLjA3MywwLDQuMjQzbDAuNjMsMC42M2wtMS4wOSwxLjYzMWwtMC44MjMtMC4zNDEgYy0wLjc0LTAuMzA3LTEuNTU2LTAuMzA3LTIuMjk2LDBjLTAuNzQsMC4zMDYtMS4zMTYsMC44ODMtMS42MjMsMS42MjNjLTAuNjMzLDEuNTI4LDAuMDk1LDMuMjg3LDEuNjIzLDMuOTJsMC44MjMsMC4zNDFMMTEuODkxLDI5IEgxMWMtMS42NTQsMC0zLDEuMzQ2LTMsM3MxLjM0NiwzLDMsM2gwLjg5MWwwLjM4MywxLjkyNGwtMC44MjMsMC4zNDFjLTEuNTI4LDAuNjMzLTIuMjU2LDIuMzkyLTEuNjIzLDMuOTIgYzAuMzA3LDAuNzQsMC44ODMsMS4zMTcsMS42MjMsMS42MjNjMC43NCwwLjMwNywxLjU1NiwwLjMwNywyLjI5NiwwbDAuODIzLTAuMzQxbDEuMDksMS42MzFsLTAuNjMsMC42MyBjLTEuMTcsMS4xNy0xLjE3LDMuMDczLDAsNC4yNDNjMS4xNywxLjE2OSwzLjA3MywxLjE2Nyw0LjI0MywwbDAuNjMtMC42M2wxLjYzMSwxLjA5bC0wLjM0MSwwLjgyM2MtMC4zMDcsMC43NC0wLjMwNywxLjU1NiwwLDIuMjk2IGMwLjMwNiwwLjc0LDAuODgzLDEuMzE2LDEuNjIzLDEuNjIzYzEuNTI0LDAuNjMzLDMuMjg2LTAuMDk1LDMuOTItMS42MjNMMjcuMDc2LDUxLjcyN3oiPjwvcGF0aD48bGluZWFyR3JhZGllbnQgaWQ9ImJxSnFKcjdYTVNWZHh2Y2hNeXpYNGIiIHgxPSIzMiIgeDI9IjMyIiB5MT0iMjEuODMzIiB5Mj0iNDQuMDkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBzcHJlYWRNZXRob2Q9InJlZmxlY3QiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzZkYzdmZiI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2U2YWJmZiI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggZmlsbD0idXJsKCNicUpxSnI3WE1TVmR4dmNoTXl6WDRiKSIgZD0iTTI4LjQzNyw0MC43MDJjLTEuMDI1LDAtMi4wNTEtMC4zOS0yLjgzMS0xLjE3MWwtNC44NjctNC44NjcgYy0wLjc4MS0wLjc4MS0wLjc4MS0yLjA0NywwLTIuODI4bDAsMGMwLjc4MS0wLjc4MSwyLjA0Ny0wLjc4MSwyLjgyOCwwbDMuNDUzLDMuNDUzYzAuNzgxLDAuNzgxLDIuMDQ3LDAuNzgxLDIuODI4LDBMNDAuNDMyLDI0LjcxIGMwLjc4MS0wLjc4MSwyLjA0Ny0wLjc4MSwyLjgyOCwwbDAsMGMwLjc4MSwwLjc4MSwwLjc4MSwyLjA0NywwLDIuODI4TDMxLjI2OCwzOS41MzFDMzAuNDg4LDQwLjMxMiwyOS40NjIsNDAuNzAyLDI4LjQzNyw0MC43MDJ6Ij48L3BhdGg+PC9zdmc+') 50% 50% no-repeat;
+    width: 64px;
+    background-size: contain;
+}
+
+.booking-confirmed-text {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 2px;
+}
+
+.booking-confirmed-destination {
+
+}
+
+.booking-confirmed-date,
+.booking-confirmed-details {
+    line-height: 18px;
+    color: #656565;
+}
+
+.available-dates-node-content {
+    display: flex;
+}
+
+.available-date {
+    text-align: center;
+    margin-right: 6px;
+}
+
+.available-date-number {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 8px;
+    line-height: 14px;
+}
+
+.available-date-day {
+    font-size: 9px;
+}
+
+.available-date-month {
+    text-transform: uppercase;
+    font-size: 9px;
+    background: #4daa34;
+    color: white;
+    font-weight: 500;
+}
+
+.available-date[data-unavailable="true"] {
+    opacity: 0.6;
+}
+
+[data-unavailable="true"] .available-date-month {
+    background: gray;
+}
+
+.available-date-availability {
+    font-size: 10px;
+}
+
+.available-date-calendar {
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 52px;
+    margin: auto;
+    margin-bottom: 6px;
 }
 
 /* ================= */

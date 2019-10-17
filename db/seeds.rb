@@ -50,7 +50,9 @@ def create_category_records(category_sets)
         name: category_set[:name], # TODO should not be condition for find
         active: true
     )
-    # TODO iterate over children±±
+    
+
+    # TODO iterate over children
   end
 end
 

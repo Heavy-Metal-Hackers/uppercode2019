@@ -1,0 +1,16 @@
+<div class="chat-node booking-confirmation-node" data-direction="in" data-timestamp="<%= timestamp %>">
+  <div class="booking-confirmation-node-wrapper">
+    <div class="booking-confirmation-node-content">
+      <div class="booking-confirmed-icon"></div>
+      <div class="booking-confirmed-info">
+        <div class="booking-confirmed-text">Buchung bestätigt</div>
+        <div class="booking-confirmed-destination">Hotel Seeblick</div>
+        <div class="booking-confirmed-date">17. - 21. Oktober 2019</div>
+        <div class="booking-confirmed-details">1 Person, Einzelzimmer</div>
+      </div>
+    </div>
+  </div>
+  <%= render 'chats/nodes/suggestions', suggestions: suggestions if defined? suggestions %>
+</div>
+
+<!-- TODO js to generate this node -->

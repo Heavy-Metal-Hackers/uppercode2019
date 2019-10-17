@@ -1,0 +1,49 @@
+<div class="chat-node available-dates-node" data-direction="in" data-timestamp="<%= timestamp %>">
+  <div class="available-dates-node-wrapper">
+    <div class="available-dates-node-content">
+      <div class="available-date">
+        <div class="available-date-calendar">
+          <div class="available-date-month">Oktober</div>
+          <div class="available-date-number">15</div>
+          <div class="available-date-day">Sonntag</div>
+        </div>
+        <div class="available-date-availability">Verfügbar</div>
+      </div>
+      <div class="available-date">
+        <div class="available-date-calendar">
+          <div class="available-date-month">Oktober</div>
+          <div class="available-date-number">16</div>
+          <div class="available-date-day">Montag</div>
+        </div>
+        <div class="available-date-availability">Verfügbar</div>
+      </div>
+      <div class="available-date">
+        <div class="available-date-calendar">
+          <div class="available-date-month">Oktober</div>
+          <div class="available-date-number">17</div>
+          <div class="available-date-day">Dienstag</div>
+        </div>
+        <div class="available-date-availability">Ausgebucht</div>
+      </div>
+      <div class="available-date" data-unavailable="true">
+        <div class="available-date-calendar">
+          <div class="available-date-month">Oktober</div>
+          <div class="available-date-number">18</div>
+          <div class="available-date-day">Mittwoch</div>
+        </div>
+        <div class="available-date-availability">Ausgebucht</div>
+      </div>
+      <div class="available-date">
+        <div class="available-date-calendar">
+          <div class="available-date-month">Oktober</div>
+          <div class="available-date-number">19</div>
+          <div class="available-date-day">Mittwoch</div>
+        </div>
+        <div class="available-date-availability">Verfügbar</div>
+      </div>
+    </div>
+  </div>
+  <%= render 'chats/nodes/suggestions', suggestions: suggestions if defined? suggestions %>
+</div>
+
+<!-- TODO js to generate this node -->

@@ -1,15 +1,16 @@
-<div class="trip-destination-node" data-direction="in" data-timestamp="<%= timestamp %>">
+<div class="chat-node trip-destination-node" data-direction="in" data-timestamp="<%= timestamp %>">
   <div class="trip-destination-node-wrapper">
     <%= render 'trip_destinations/card',
                id: 1,
                type: 'hotel',
-               time: 'Check-In 12:00',
+               time: '86% Übereinstimmung',
                title: 'Hotel Seeblick',
                image: 'https://media.tourdata.at/exp/sommer/responsiveTeaserBoxImg/orteinformation/430000877.png',
                details: 'Unterkunft, Halbpension',
                address: 'Bergstraße 62, 2131 Linzdorf',
                actions: []  %>
   </div>
+  <%= render 'chats/nodes/suggestions', suggestions: suggestions if defined? suggestions %>
 </div>
 
 <!-- TODO js to generate this node -->
