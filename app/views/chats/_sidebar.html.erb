@@ -1,0 +1,26 @@
+<div class="chat-sidebar" data-collapsed="<%= if defined?(collapsed) then collapsed end %>">
+  <%= render 'chats/sidebar_title_bar' %>
+  <%= render 'chats/sidebar_trip_bar' %>
+  <%= render 'chats/dialog' %>
+</div>
+
+<script>
+    function collapseChatSidebar() {
+        $('.chat-sidebar').attr('data-collapsed', true);
+        $('.collapsable-area').fadeOut();
+        $('.chat-floating-button').show();
+    }
+
+    function expandChatSidebar() {
+        if (typeof collapseTripSidebar === 'function') collapseTripSidebar();
+        $('.chat-sidebar').attr('data-collapsed', false);
+        $('.collapsable-area').fadeIn();
+        $('.chat-floating-button').hide();
+    }
+
+    $('.chat-floating-button').click(() => {
+        expandChatSidebar();
+    });
+
+    collapseChatSidebar();
+</script>

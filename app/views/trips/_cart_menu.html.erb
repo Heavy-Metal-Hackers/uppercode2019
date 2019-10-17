@@ -8,23 +8,25 @@
 </div>
 
 <script>
-    function collapseSidebar() {
+    function collapseTripSidebar() {
         $('.trip-sidebar').attr('data-collapsed', true);
         $('.collapsable-area').fadeOut();
     }
 
-    function expandSidebar() {
+    function expandTripSidebar() {
+        if (typeof collapseChatSidebar === 'function') collapseChatSidebar();
         $('.trip-sidebar').attr('data-collapsed', false);
         $('.collapsable-area').fadeIn();
     }
 
     $('.collapsable-area').click(() => {
-        collapseSidebar();
+        collapseTripSidebar();
+        if (typeof collapseChatSidebar === 'function') collapseChatSidebar();
     });
 
     $('.trip-cart-menu-dropdown').click(() => {
-        expandSidebar();
+        expandTripSidebar();
     });
 
-    collapseSidebar();
+    collapseTripSidebar();
 </script>

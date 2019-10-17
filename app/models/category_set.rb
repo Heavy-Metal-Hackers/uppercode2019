@@ -3,8 +3,10 @@ class CategorySet < ActiveRecord::Base
 
   include PgSearch
 
+  validates_uniqueness_of :category_type
+
   # fields:
-  # type (numerical),
+  # category_type (numerical),
   # name (example: POI or Touren)
   # TODO name must be retrieved via i18n
 

@@ -1,0 +1,25 @@
+<div class="chat-dialog">
+  <!--<div class="chat-dialog-title">TODO packe mich in eine sidebar</div>-->
+  <div class="chat-nodes">
+    <%= render 'chats/nodes/chat_node',
+               message: 'Hallo! Ich bin dein persönlicher Reiseassistent. 🤖',
+               direction: 'in',
+               timestamp: '' %>
+    <%= render 'chats/nodes/chat_node',
+               message: 'Anhand deiner Vorlieben und bisherigen Reisen möchte ich dir dabei helfen, deine perfekte Reise nach Oberösterreich zu planen. Du kannst mich aber auch gerne etwas anderes fragen.',
+               direction: 'in',
+               timestamp: '' %>
+    <%= render 'chats/nodes/chat_node',
+               message: 'Fangen wir an. Reist du üblicherweise alleine oder in Begleitung?',
+               direction: 'in',
+               timestamp: '',
+               suggestions: ['Alleine', 'Mit meinem/r PartnerIn', 'Mit meiner Familie'] %>
+    <%#= render 'chats/nodes/chat_node', message: 'Störung erfolgreich behoben', direction: 'event', timestamp: '' %>
+  </div>
+  <%= render 'chats/input' %>
+</div>
+
+<script>
+    <%= render 'chats/script.js' %>
+</script>
+

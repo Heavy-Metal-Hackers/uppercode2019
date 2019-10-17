@@ -1,0 +1,18 @@
+<div class="trip-bar" data-collapsed="true">
+  <div class="trip-bar-title">Meine Reise</div>
+    <div class="trip-bar-action" onclick="expandTripSidebar()">Mehr Details</div>
+  <%= render 'trips/destination_feed', compact: true %>
+</div>
+
+<script>
+  var tripBarTimeout;
+    $('.trip-bar').mouseenter(() => {
+        clearTimeout(tripBarTimeout);
+        tripBarTimeout = setTimeout(() =>
+          $('.trip-bar').attr('data-collapsed', false), 300);
+    });
+    $('.trip-bar').mouseleave(() => {
+        clearTimeout(tripBarTimeout);
+        $('.trip-bar').attr('data-collapsed', true);
+    });
+</script>

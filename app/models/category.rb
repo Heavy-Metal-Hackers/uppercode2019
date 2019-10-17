@@ -5,16 +5,26 @@ class Category < ActiveRecord::Base
 
   include PgSearch
 
+  validates_uniqueness_of :key
+
   # fields:
   # id,
   # name,
-  # type (optional),
   # pin (optional),
-  # schemaorg (optional, equals id)
+  # schemaorg (optional)
   # TODO name must be retrieved via i18n
 
   def to_s
     name.to_s
+  end
+
+  def main_category_set
+    category_set if category_set.present?
+    parent_category.main_category_set if parent_category.present?
+  end
+
+  def category_type
+    category_set.category_type
   end
 
   def level

@@ -53,6 +53,9 @@ gem 'ibm_watson'
 # https://github.com/sparklemotion/nokogiri
 gem 'nokogiri'
 
+# https://github.com/digitalheir/ruby-xml-to-hash
+gem 'xml-to-hash'
+
 gem 'leaflet-rails'
 
 group :production do

@@ -1,0 +1,11 @@
+class CreateTripAssistantInstances < ActiveRecord::Migration
+  def change
+    create_table :trip_assistant_instances do |t|
+
+      
+      t.boolean :active
+
+      t.timestamps null: false
+    end
+  end
+end

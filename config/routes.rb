@@ -37,6 +37,7 @@ Rails.application.routes.draw do
   end
 
   controller :chats do
+    get 'chats', :to => "chats#index"
     get 'chat_node', :to => "chats#chat_node"
   end
 
