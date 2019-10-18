@@ -1,7 +1,8 @@
 class CreateGeoLocations < ActiveRecord::Migration
   def self.up
     create_table :geo_locations do |t|
-      t.string :geo_id
+      t.string :guid, index: true
+      t.integer :local_id, index: true
 
       t.string :link
       t.string :description

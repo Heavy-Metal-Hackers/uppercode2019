@@ -1,11 +1,11 @@
 class Chat < ActiveRecord::Base
-  belongs_to :customer
+  belongs_to :guest
   has_one :trip_assistant_instance
   has_many :chat_nodes
   include PgSearch
 
   def to_s
-    customer.to_s + ' ' + started_at.to_s
+    guest.to_s + ' ' + started_at.to_s
   end
 
   def set_inactive(user = nil)

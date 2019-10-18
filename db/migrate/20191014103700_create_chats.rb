@@ -2,7 +2,7 @@ class CreateChats < ActiveRecord::Migration
   def self.up
     create_table :chats do |t|
 
-      t.references :customer, index: true
+      t.references :guest, index: true
 
       t.datetime :started_at
       

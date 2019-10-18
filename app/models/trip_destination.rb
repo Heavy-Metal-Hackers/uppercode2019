@@ -1,7 +1,7 @@
 class TripDestination < ActiveRecord::Base
   belongs_to :trip
   belongs_to :geo_location
-  has_one :customer, through: :trip
+  has_one :guest, through: :trip
   include PgSearch
 
   # TODO has a single marker and a datetime
@@ -9,6 +9,21 @@ class TripDestination < ActiveRecord::Base
   def to_s
     # TODO
     'trip_destination ' + id
+  end
+
+  def start_date
+    date
+  end
+
+  # minutes
+  def duration
+    return 0 if geo_location.is_a? Accommodation
+    return 180 if geo_location.duration.blank? # TODO get from google
+    geo_location.duration
+  end
+
+  def end_date
+    date + duration.minutes
   end
 
   def set_inactive(user = nil)

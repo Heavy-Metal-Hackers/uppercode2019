@@ -12,8 +12,8 @@ class Address < ActiveRecord::Base
   } # auto-fetch coordinates
 
   #after_validation do
-  #  customer_id = if customer.present? then customer.id else nil end
-  #  self.clear_latlng_cache(customer_id)
+  #  guest_id = if guest.present? then guest.id else nil end
+  #  self.clear_latlng_cache(guest_id)
   #end
 
   def full_street_address

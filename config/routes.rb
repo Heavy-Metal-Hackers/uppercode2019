@@ -26,9 +26,8 @@ Rails.application.routes.draw do
     get 'service_requests/:id', :to => "service_requests#show"
   end
 
-  controller :trips do
-    get 'trips', :to => "trips#index"
-    get 'trips/:id', :to => "trips#show"
+  resources :trips do
+    # stub
   end
 
   controller :traveller_profiles do

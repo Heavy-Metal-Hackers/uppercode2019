@@ -67,7 +67,7 @@ class TicketsController < ApplicationController
         browser_version: params[:ticket][:platform][:browser_version],
         user_agent: params[:ticket][:platform][:user_agent] || request.headers["User-Agent"],
 
-        customer: current_customer,
+        guest: current_guest,
         create_user: current_user,
         update_user: current_user,
         active: true
@@ -91,6 +91,6 @@ class TicketsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def ticket_params
-      params.require(:ticket).permit(:ticket_type, :description, :activity_id, :error_report_id, :product_id, :state, :screenshot, :input, :is_read, :result_info, :ticketable_id, :ticketable_type, :given_by_id, :given_at, :customer_id, :active)
+      params.require(:ticket).permit(:ticket_type, :description, :activity_id, :error_report_id, :product_id, :state, :screenshot, :input, :is_read, :result_info, :ticketable_id, :ticketable_type, :given_by_id, :given_at, :guest_id, :active)
     end
 end

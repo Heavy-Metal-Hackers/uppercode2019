@@ -1,12 +1,19 @@
 class Trip < ActiveRecord::Base
-  belongs_to :customer
+  belongs_to :guest
   has_one :trip_assistant_instance
   has_many :destinations, class_name: 'TripDestination'
   include PgSearch
 
   def to_s
-    # TODO
     'trip ' + id
+  end
+
+  def start_date
+    destinations.order(date: :asc).first.date rescue nil
+  end
+
+  def end_date
+    destinations.sort_by {|destination| destination.end_date}.first.end_date rescue nil
   end
 
   def set_inactive(user = nil)

@@ -91,6 +91,10 @@ class ApplicationController < ActionController::Base
     empty
   end
 
+  def current_guest
+    Guest.first # mocked up
+  end
+
   def set_locale
     I18n.locale = params[:locale] || (current_user && current_user.locale ? current_user.locale : false) || I18n.default_locale
     # current_user.update_attributes locale: I18n.locale.to_s if current_user and I18n.locale.to_s != current_user.locale

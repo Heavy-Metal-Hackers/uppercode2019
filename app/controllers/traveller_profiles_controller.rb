@@ -33,7 +33,7 @@ class TravellerProfilesController < ApplicationController
 
   def create
     @traveller_profile = TravellerProfile.new(
-        customer: current_customer,
+        guest: current_guest,
         create_user: current_user,
         update_user: current_user,
         active: true
@@ -54,6 +54,6 @@ class TravellerProfilesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def traveller_profile_params
-      params.require(:traveller_profile).permit(:id, :customer_id, :active)
+      params.require(:traveller_profile).permit(:id, :guest_id, :active)
     end
 end

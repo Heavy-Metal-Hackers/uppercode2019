@@ -13,5 +13,10 @@
             noWrap: true
             //attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
+
+        $.get('<%= trip_path 1, format: :json %>', tourObjects => {
+            console.log(tourObjects);
+            // TODO take the destinations and make markers
+        });
     });
 </script>

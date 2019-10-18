@@ -76,6 +76,7 @@ oew_types = %w(Gastronomie POIs Touren Unterkuenfte Veranstaltungen)
 # create_category_records oew_categories
 
 class Feedjira::Parser::RSSEntry
+  element "ec:source_id", as: :local_id
   element "geo:lat", as: :latitude
   element "geo:long", as: :longitude
   element "link", as: :link
@@ -156,12 +157,14 @@ def create_geo_entry(feed_entry)
   )
 
   geo_location_record = GeoLocation.find_or_create_by(
-      geo_id: feed_entry.id,
+      guid: feed_entry.id,
       type: get_inherited_class_name(feed_entry.main_category),
       active: true
   )
 
   geo_location_record.update(
+      local_id: feed_entry.local_id,
+
       address: address_record,
       contact_address: contact_address_record,
 
@@ -194,7 +197,6 @@ def create_geo_entry(feed_entry)
 
       active: true
   )
-
 end
 
 def parse_georss(oew_type)
@@ -202,24 +204,6 @@ def parse_georss(oew_type)
 
   georss = File.read("#{Rails.root}/public/ooe_daten/OEW-#{oew_type}.xml")
   feed = Feedjira.parse(georss)
-
-  #puts feed.entries.first.id
-  #puts feed.entries.first.title
-  #puts feed.entries.first.link
-  #puts feed.entries.first.description
-  #puts feed.entries.first.short_description
-  #puts feed.entries.first.categories
-  # TODO link to given category. Just need first one per entry because other ones are already linked
-  #puts feed.entries.first.image
-  #puts feed.entries.first.inspect
-  #feed.entries.first.keywords.gsub(/\s+/m, ' ').strip.split(' ').each do |keyword|
-  #    puts keyword
-  #end
-  # categories?
-  #puts feed.entries.first.latitude
-  #puts feed.entries.first.longitude
-
-
 
   feed.entries.each do |entry|
     create_geo_entry entry
@@ -231,46 +215,64 @@ end
 
 oew_types.each {|oew_type| parse_georss(oew_type)}
 
+guest_record = Guest.find_or_create_by(
+    name: 'Jon Traveller',
+    active: true
+)
 
+trip_record = Trip.find_or_create_by(
+    guest: guest_record,
+    active: true
+)
+
+[
+    {
+        id: 430001788,
+        date: Time.new(2019, 10, 26, 9, 0)
+    },
+    {
+        id: 150054,
+        date: Time.new(2019, 10, 25, 16, 0)
+    },
+    {
+        id: 430001788,
+        date: Time.new(2019, 10, 26, 12, 30)
+    },
+    {
+        id: 430000962,
+        date: Time.new(2019, 10, 25, 19, 0)
+    },
+    {
+        id: 430000962,
+        date: Time.new(2019, 10, 26, 19, 0)
+    }
+].each do |destination|
+  TripDestination.find_or_create_by(
+      geo_location: GeoLocation.where(active: true).find_by_local_id(destination[:id]),
+      trip: trip_record,
+      date: destination[:date],
+      active: true
+  )
+end
+
+# TODO directly redirect to the given destination
 
 =begin
-customer = Customer.create(
-    ccb_Nummer: 7340303520,
-    serviceLevel: 'LVR SL Classic SK4',
-    kundenklasse: 'A1',
-    name: 'Müller Hosting KG',
-    active: true
-)
-
-contact_person = ContactPerson.create(
-    #customer: customer,
-    name: 'Wolfgang Schmidt',
-    email: 'privat@christian-konrad.me',
-    phone: '0176 84172089',
-    active: true
-)
-
-customer.update(
-    standardAnsprechpartner: contact_person
-)
-
-Ticket.create(
-    ticketnummer: 'TA0000013158672',
-    status: 'geschlossen',
-    zielzeit: '2018-10-18T12:39',
-    dienstTechnik: 'Daten IP',
-    dienstProdukt: 'Company Net',
-    problembeschreibung: 'Verbindungsaufbau',
-    problemtyp: 'kundenreklamation',
-    schweregrad: 'minor',
-    prio: 4,
-    stoerungsbeginn: '2018-10-16T11:28',
-    stoerungsende: '2018-10-17T15:13',
-    proaktiv: false,
-    webIF: true,
-    loesungWas: 'Lösung durch Kunde',
-    verursacher: 'kunde',
-    customer: customer,
-    active: true
-)
+Gast bekommt diesen Bike Trip vorgeschlagen und nimmt ihn an:
+https://www.oberoesterreich.at/oesterreich-tour/detail/430001788/linz-reichenau-gramastetten-linz.html
+bike trip: 430001788
+Bot fragt nach Anreisezeiten und Präferenzen für Hotel und schlägt dies vor, Gast sagt ja
+# https://www.oberoesterreich.at/oesterreich-unterkunft/detail/150054/hotel-sommerhaus.html
+hotel: 150054
+Bot fragt ob Mittag gegessen werden soll, also eine Rad Trip Pause eingelegt wird
+https://www.oberoesterreich.at/oesterreich-gastronomie/detail/430007394/gasthof-post-rittberger-gastro-gmbh.html
+radtrip pause: 430007394
+(Bot findet Gaststätte die dem Geschmack des fahrers entspricht, auf halber Route liegt und geöffnet ist)
+Bot fragt ob Abendessen gewünscht und wenn ja, ob extern
+Gast sagt ja, extrn
+https://www.oberoesterreich.at/oesterreich-gastronomie/detail/430000962/square-cafe-bar-lounge-restaurant.html
+Abendessen: 430000962
+Bot fragt ob man dort auch am nächsten Tag zu abend essen möchte
+Gast sagt ja
+Bot weist darauf hin dass Gast sich jederzeit umentscheiden darf
 =end

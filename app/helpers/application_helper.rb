@@ -4,6 +4,10 @@ module ApplicationHelper
   #  JSON.parse cookies.signed[:cart] rescue nil
   #end
 
+  def current_guest
+    Guest.first # mocked up
+  end
+
   def namespace
     if controller.class.parent.blank? || controller.class.parent.name.blank? || controller.class.parent.name == 'Object'
       nil

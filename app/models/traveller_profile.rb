@@ -1,11 +1,11 @@
 class TravellerProfile < ActiveRecord::Base
-  belongs_to :customer
+  belongs_to :guest
   include PgSearch
 
   # TODO stores all the preferences of a user like travelling alone or with family, lkikes wellness or action etc
 
   def to_s
-    'TravellerProfile of' + customer
+    'TravellerProfile of' + guest
   end
 
   def set_inactive(user = nil)

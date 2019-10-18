@@ -9,6 +9,14 @@ class GeoLocation < ActiveRecord::Base
     address.to_s
   end
 
+  def link_scope
+    ''
+  end
+
+  def link
+    "https://www.oberoesterreich.at/oesterreich-#{link_scope}/detail/#{local_id}"
+  end
+
   def set_inactive(user = nil)
     self.active = false
     self.update_user = user

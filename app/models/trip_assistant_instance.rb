@@ -1,5 +1,5 @@
 class TripAssistantInstance < ActiveRecord::Base
-  belongs_to :customer
+  belongs_to :guest
   belongs_to :chat
   belongs_to :trip
   include PgSearch

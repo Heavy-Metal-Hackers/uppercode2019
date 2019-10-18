@@ -7,12 +7,12 @@ class TripsController < ApplicationController
   def index
     @trips = Trip.where(active: true).order(starts_at: :desc)
     @trips = @trips.where('updated_at > ?', Time.zone.parse(params[:last_sync])) unless params[:last_sync].blank? || (Time.zone.parse params[:last_sync] rescue nil) == nil
-    # respond_to do |format|
-    #   format.html
-    #   format.json
+     respond_to do |format|
+       format.html
+       format.json
     #   format.csv { send_data @tickets.to_csv }
     #   format.xls # { send_data @tickets.to_csv(col_sep: "\t") }
-    # end
+     end
   end
   
   def deleted
@@ -37,7 +37,7 @@ class TripsController < ApplicationController
 
   def create
     @trip = Trip.new(
-        customer: current_customer,
+        guest: current_guest,
         create_user: current_user,
         update_user: current_user,
         active: true
@@ -58,6 +58,6 @@ class TripsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def trip_params
-      params.require(:trip).permit(:id, :customer_id, :active)
+      params.require(:trip).permit(:id, :guest_id, :active)
     end
 end
