@@ -11,6 +11,8 @@ class TripDestination < ActiveRecord::Base
     'trip_destination ' + id
   end
 
+  # TODO get weather
+
   def start_date
     date
   end
@@ -24,6 +26,10 @@ class TripDestination < ActiveRecord::Base
 
   def end_date
     date + duration.minutes
+  end
+
+  def week_day
+    date.strftime('%A')
   end
 
   def set_inactive(user = nil)

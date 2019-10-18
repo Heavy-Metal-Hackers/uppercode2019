@@ -171,7 +171,7 @@ def create_geo_entry(feed_entry)
       link: feed_entry.link,
       description: feed_entry.description,
       short_description: feed_entry.short_description,
-      name: feed_entry.name,
+      name: feed_entry.title,
       keywords: feed_entry.keywords,
       image: feed_entry.image,
 
