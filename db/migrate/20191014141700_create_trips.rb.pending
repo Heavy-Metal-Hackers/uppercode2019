@@ -1,5 +1,5 @@
 class CreateTrips < ActiveRecord::Migration
-  def change
+  def self.up
     create_table :trips do |t|
 
       
@@ -7,5 +7,9 @@ class CreateTrips < ActiveRecord::Migration
 
       t.timestamps null: false
     end
+  end
+
+  def self.down
+    drop_table :trips
   end
 end

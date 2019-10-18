@@ -58,6 +58,12 @@ gem 'xml-to-hash'
 
 gem 'leaflet-rails'
 
+# https://github.com/feedjira/feedjira
+gem "feedjira"
+
+# https://github.com/alexreisner/geocoder
+gem 'geocoder'
+
 group :production do
   # stub
 end

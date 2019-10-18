@@ -1,11 +1,16 @@
 class CreateTripDestinations < ActiveRecord::Migration
-  def change
+  def self.up
     create_table :trip_destinations do |t|
 
+      t.references :geo_location, index: true
       
       t.boolean :active
 
       t.timestamps null: false
     end
+  end
+
+  def self.down
+    drop_table :trip_destinations
   end
 end

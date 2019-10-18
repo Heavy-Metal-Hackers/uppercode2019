@@ -1,5 +1,5 @@
 class CreateTripAssistantInstances < ActiveRecord::Migration
-  def change
+  def self.up
     create_table :trip_assistant_instances do |t|
 
       
@@ -7,5 +7,9 @@ class CreateTripAssistantInstances < ActiveRecord::Migration
 
       t.timestamps null: false
     end
+  end
+
+  def self.down
+    drop_table :trip_assistant_instances
   end
 end

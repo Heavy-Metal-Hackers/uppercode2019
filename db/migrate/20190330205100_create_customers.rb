@@ -1,5 +1,5 @@
 class CreateCustomers < ActiveRecord::Migration
-  def change
+  def self.up
     create_table :customers do |t|
 
       t.string :name
@@ -11,5 +11,9 @@ class CreateCustomers < ActiveRecord::Migration
 
       t.timestamps null: false
     end
+  end
+
+  def self.down
+    drop_table :customers
   end
 end

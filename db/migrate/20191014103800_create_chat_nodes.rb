@@ -1,5 +1,5 @@
 class CreateChatNodes < ActiveRecord::Migration
-  def change
+  def self.up
     create_table :chat_nodes do |t|
 
       t.references :chat, index: true
@@ -12,5 +12,9 @@ class CreateChatNodes < ActiveRecord::Migration
 
       t.timestamps null: false
     end
+  end
+
+  def self.down
+    drop_table :chat_nodes
   end
 end

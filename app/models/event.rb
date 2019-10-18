@@ -1,0 +1,3 @@
+class Event < GeoLocation
+
+end

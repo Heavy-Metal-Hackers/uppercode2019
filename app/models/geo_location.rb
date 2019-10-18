@@ -1,14 +1,12 @@
-class TripDestination < ActiveRecord::Base
-  belongs_to :trip
-  belongs_to :geo_location
-  has_one :customer, through: :trip
+class GeoLocation < ActiveRecord::Base
+  belongs_to :address
+  belongs_to :contact_address, class_name: 'Address'
+  has_many :categories
+
   include PgSearch
 
-  # TODO has a single marker and a datetime
-
   def to_s
-    # TODO
-    'trip_destination ' + id
+    address.to_s
   end
 
   def set_inactive(user = nil)
@@ -48,7 +46,7 @@ class TripDestination < ActiveRecord::Base
   end
 
   pg_search_scope :full_search,
-    :against => [],
+    :against => [:name],
     :using => {
       :tsearch => {:prefix => true},
       :dmetaphone => {},
