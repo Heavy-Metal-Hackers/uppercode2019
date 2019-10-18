@@ -30,6 +30,13 @@ Rails.application.routes.draw do
     # stub
   end
 
+  resources :trip_destinations do
+    # stub
+    get 'card/:id', :to => "traveller_profiles#card"
+  end
+
+  # TODO chatbot greetng and query param
+
   controller :traveller_profiles do
     get 'traveller_profiles', :to => "traveller_profiles#index"
     get 'traveller_profiles/:id', :to => "traveller_profiles#show"

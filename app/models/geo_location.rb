@@ -13,6 +13,12 @@ class GeoLocation < ActiveRecord::Base
     ''
   end
 
+  def formatted_polygon
+    return if polygon.blank?
+    polygon.split.select.with_index{|_,i| (i) % 2 == 0}.zip(polygon.split.select.with_index{|_,i| (i+1) % 2 == 0})
+        .map{|record| [record[0].to_f, record[1].to_f]}
+  end
+
   def link
     "https://www.oberoesterreich.at/oesterreich-#{link_scope}/detail/#{local_id}"
   end
