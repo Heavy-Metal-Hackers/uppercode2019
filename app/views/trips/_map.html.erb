@@ -15,8 +15,25 @@
         }).addTo(map);
 
         $.get('<%= trip_path 1, format: :json %>', tourObjects => {
-            console.log(tourObjects);
-            // TODO take the destinations and make markers
+            tourObjects.destinations.forEach(
+                function (destination) {
+                    // render marker of destination
+                    let lat = parseFloat(destination.geo_location.address.lat);
+                    let lng = parseFloat(destination.geo_location.address.lng);
+                    let marker = L.marker([lat, lng]).addTo(map);
+
+                    let polylineData = destination.geo_location.polygon;
+                    // if polygon available -> destination has a route
+                    if (polylineData) {
+                        // render route of destination
+                        let polyline = L.polyline(polylineData).addTo(map);
+
+                        // move map to starting point of route
+                        let startingPoint = [polylineData[0][0], polylineData[0][1]];
+                        map.panTo(startingPoint);
+                    }
+                }
+            );
         });
     });
 </script>
