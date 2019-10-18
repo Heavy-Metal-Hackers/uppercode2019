@@ -32,7 +32,7 @@ Rails.application.routes.draw do
 
   resources :trip_destinations do
     # stub
-    get 'card/:id', :to => "traveller_profiles#card"
+    get 'card', :to => "trip_destinations#card"
   end
 
   # TODO chatbot greetng and query param

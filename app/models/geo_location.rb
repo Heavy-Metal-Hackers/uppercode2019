@@ -1,7 +1,7 @@
 class GeoLocation < ActiveRecord::Base
   belongs_to :address
   belongs_to :contact_address, class_name: 'Address'
-  has_many :categories
+  has_and_belongs_to_many :categories
 
   include PgSearch
 

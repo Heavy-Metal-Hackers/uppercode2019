@@ -9,6 +9,7 @@ json.destinations(@trip.destinations) do |destination|
     json.id destination.geo_location.id
     json.address destination.geo_location.address
     json.contact_address destination.geo_location.contact_address
+    json.categories destination.geo_location.categories
     json.type destination.geo_location.type
     json.link destination.geo_location.link
     json.description destination.geo_location.description

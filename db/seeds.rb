@@ -67,13 +67,13 @@ end
 
 oew_types = %w(Gastronomie POIs Touren Unterkuenfte Veranstaltungen)
 
-#oew_categories = oew_types.map {|oew_type|
-#  parse_categories_xml(oew_type).merge({:name => oew_type}) # TODO name at earlier position
-#}
+oew_categories = oew_types.map {|oew_type|
+  parse_categories_xml(oew_type).merge({:name => oew_type}) # TODO name at earlier position
+}
 
 # File.write("#{Rails.root}/public/ooe_daten/parsed_categories.json", JSON.pretty_generate(oew_categories))
 
-# create_category_records oew_categories
+ create_category_records oew_categories
 
 class Feedjira::Parser::RSSEntry
   element "ec:source_id", as: :local_id
@@ -197,6 +197,8 @@ def create_geo_entry(feed_entry)
 
       active: true
   )
+
+  geo_location_record.categories << feed_entry.categories.map{|category| Category.find_by(name: category, active: true)}
 end
 
 def parse_georss(oew_type)
@@ -235,7 +237,7 @@ trip_record = Trip.find_or_create_by(
         date: Time.new(2019, 10, 25, 16, 0)
     },
     {
-        id: 430001788,
+        id: 430007394,
         date: Time.new(2019, 10, 26, 12, 30)
     },
     {
@@ -256,6 +258,7 @@ trip_record = Trip.find_or_create_by(
 end
 
 # TODO directly redirect to the given destination
+# TODO fake food preferences
 
 =begin
 Gast bekommt diesen Bike Trip vorgeschlagen und nimmt ihn an:

@@ -24,11 +24,8 @@ class TripDestinationsController < ApplicationController
   end
 
   def card
-    @trip = Trip.find_by(active: true, id: params[:id])
-    if !@trip.active
-      # TODO return 404
-    end
-    render
+    @trip_destination = TripDestination.find_by(active: true, id: params[:id])
+    render :layout => false
   end
 
   def new

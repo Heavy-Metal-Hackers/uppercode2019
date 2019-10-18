@@ -2,6 +2,7 @@ class Category < ActiveRecord::Base
   belongs_to :parent_category, class_name: 'Category'
   belongs_to :category_set
   has_many :sub_categories, class_name: 'Category'
+  has_and_belongs_to_many :geo_locations
 
   include PgSearch
 

@@ -1263,6 +1263,44 @@ button {
     margin-bottom: 6px;
 }
 
+.fab-notification {
+    background: red;
+    border-radius: 5px;
+    position: absolute;
+    right: 8px;
+    bottom: 80px;
+    padding: 8px 10px;
+    width: 180px;
+    color: white;
+}
+
+.fab-notification:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top: 14px solid #f00;
+    position: absolute;
+    right: 14px;
+    bottom: -12px;
+}
+
+.fab-notification {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: bounce-7;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+@keyframes bounce-7 {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1,.9)   translateY(0); }
+    30%  { transform: scale(1,1.1)   translateY(-30px); }
+    50%  { transform: scale(1,1) translateY(0); }
+    70% { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
+
 /* ================= */
 /* === Scrollbars == */
 /* ================= */
