@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="RailsFacetType" name="Ruby on Rails">
+      <configuration>
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_FACET_SUPPORT_REMOVED" VALUE="false" />
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_TESTS_SOURCES_PATCHED" VALUE="true" />
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_FACET_APPLICATION_ROOT" VALUE="$MODULE_DIR$" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="ModuleRunConfigurationManager">
+    <shared />
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/features" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/.bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/components" />
+      <excludeFolder url="file://$MODULE_DIR$/log" />
+      <excludeFolder url="file://$MODULE_DIR$/public/packs" />
+      <excludeFolder url="file://$MODULE_DIR$/public/system" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/cache" />
+    </content>
+    <orderEntry type="jdk" jdkName="Remote-rvm: ruby-2.3.4-p301" jdkType="RUBY_SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="actionmailer (v4.2.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actionpack (v4.2.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actionview (v4.2.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activejob (v4.2.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activemodel (v4.2.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activerecord (v4.2.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activesupport (v4.2.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="addressable (v2.6.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="arel (v6.0.4, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="autoprefixer-rails (v9.5.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="aws-sdk (v1.67.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="aws-sdk-v1 (v1.67.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="binding_of_caller (v0.8.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bootstrap-sass (v3.3.7, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.3, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.17.3, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="byebug (v11.0.1, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="climate_control (v0.2.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v4.1.1, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="coffee-script (v2.4.1, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.12.2, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.5, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.4, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="debug_inspector (v0.0.3, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="domain_name (v0.5.20180417, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dotenv (v2.7.2, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dotenv-rails (v2.7.2, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="eventmachine (v1.2.7, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="excon (v0.62.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="execjs (v2.7.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faye-websocket (v0.10.7, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="feedjira (v3.0.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ffi (v1.10.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="font-awesome-rails (v4.7.0.4, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="geocoder (v1.5.2, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.2, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="google-webfonts-rails (v0.0.4, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="http (v4.1.1, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="http-cookie (v1.0.3, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="http-form_data (v2.1.1, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="http_parser.rb (v0.6.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="httparty (v0.16.4, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="i18n (v0.9.5, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ibm_cloud_sdk_core (v0.1.1, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ibm_watson (v0.16.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.8.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v4.3.3, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="json (v1.8.6, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="leaflet-rails (v1.5.1, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="loofah (v2.2.3, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mail (v2.7.1, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mandrill-api (v1.0.53, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="material_icons (v2.2.1, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="meta-tags (v2.11.1, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mime-types (v3.2.2, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mime-types-data (v3.2018.0812, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mimemagic (v0.3.3, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.0.1, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mini_portile2 (v2.4.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="minitest (v5.11.3, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.13.1, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_xml (v0.6.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.10.2, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="oj (v3.7.11, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="paperclip (v6.1.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pg (v0.21.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pg_search (v2.1.4, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="public_suffix (v3.0.3, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="puma (v3.12.1, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack (v1.6.11, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.6.3, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails (v4.2.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails-deprecated_sanitizer (v1.0.3, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails-dom-testing (v1.0.9, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails-html-sanitizer (v1.0.4, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails_12factor (v0.0.3, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails_serve_static_assets (v0.0.5, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails_stdout_logging (v0.0.5, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="railties (v4.2.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v12.3.2, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rb-fsevent (v0.10.3, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rb-inotify (v0.10.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rdoc (v4.3.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubyzip (v1.2.2, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sass (v3.7.3, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sass-listen (v4.0.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sass-rails (v5.0.7, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sax-machine (v1.3.2, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sdoc (v0.4.2, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="simple_form (v4.0.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sprockets (v3.7.2, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.2.1, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="terrapin (v0.6.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="thor (v0.20.3, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.3.6, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.9, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="turbolinks (v5.2.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="turbolinks-source (v5.2.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tzinfo (v1.2.5, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="uglifier (v4.1.20, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="unf (v0.1.4, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="unf_ext (v0.0.7.5, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="web-console (v2.3.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="websocket-driver (v0.7.0, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="websocket-extensions (v0.1.3, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="xml-to-hash (v1.0.3, Remote-rvm: ruby-2.3.4-p301) [gem]" level="application" />
+  </component>
+  <component name="RModuleSettingsStorage">
+    <LOAD_PATH number="0" />
+    <I18N_FOLDERS number="1" string0="$MODULE_DIR$/config/locales" />
+  </component>
+</module>
