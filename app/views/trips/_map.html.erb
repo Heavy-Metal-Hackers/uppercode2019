@@ -1,13 +1,47 @@
 <div id="trip-map" class="trip-map"></div>
 
+<style>
+  img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-clickable {
+    margin-top: -34px;
+    margin-left: -16px;
+  }
+
+  #trip-map {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+  }
+
+  .marker-div-icon img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .marker-div-icon {
+    margin-top: -28px;
+    margin-left: -11px;
+  }
+
+  .marker-div-icon span {
+    position: absolute;
+    left: 28px;
+    top: -22px;
+    font-weight: bold;
+    text-shadow: 0px 0 2px white;
+  }
+</style>
+
 <script>
     $(function () {
         const map = L.map('trip-map', {
-            center: [50.58485, 8.64423],
-            zoom: 16,
-            zoomControl: false,
-            minZoom: 1
+            zoomControl: false
         });
+
+        //add zoom control with your options
+        L.control.zoom({
+            position:'bottomright'
+        }).addTo(map);
+
+        let group = new L.featureGroup();
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             noWrap: true
@@ -15,25 +49,108 @@
         }).addTo(map);
 
         $.get('<%= trip_path 1, format: :json %>', tourObjects => {
+            console.log(tourObjects);
+
+            let mainDestination;
+            let polylineData;
+            for (let i = 0; i < tourObjects.destinations.length; i++) {
+                polylineData = tourObjects.destinations[i].geo_location.polygon;
+                if (polylineData) {
+                    mainDestination = tourObjects.destinations[i];
+                    break;
+                }
+            }
+            let polyline = L.polyline(polylineData).addTo(map);
+
+            // let startingPoint = [polylineData[0][0], polylineData[0][1]];
+            // map.panTo(startingPoint);
+
+            let destinationsBeforeMainDestinations = [];
+
             tourObjects.destinations.forEach(
                 function (destination) {
-                    // render marker of destination
-                    let lat = parseFloat(destination.geo_location.address.lat);
-                    let lng = parseFloat(destination.geo_location.address.lng);
-                    let marker = L.marker([lat, lng]).addTo(map);
 
-                    let polylineData = destination.geo_location.polygon;
-                    // if polygon available -> destination has a route
-                    if (polylineData) {
-                        // render route of destination
-                        let polyline = L.polyline(polylineData).addTo(map);
+                    if (!destination.geo_location.polygon) {
 
-                        // move map to starting point of route
-                        let startingPoint = [polylineData[0][0], polylineData[0][1]];
-                        map.panTo(startingPoint);
+                        // get latitude and longitude
+                        let lat = parseFloat(destination.geo_location.address.lat);
+                        let lng = parseFloat(destination.geo_location.address.lng);
+
+                        // get pin
+                        let i = 0;
+                        let pin;
+                        while (!pin) {
+                            pin = destination.geo_location.categories[i].pin;
+                            i++;
+                        }
+
+                        let title = destination.geo_location.name;
+
+                        console.log(destination.geo_location);
+
+                        // // render marker
+                        // L.marker([lat, lng], {icon: icon}).addTo(map).addTo(group);
+
+                        new L.Marker([lat, lng], {
+                            icon: new L.DivIcon({
+                                className: 'my-div-icon',
+                                html: `<div class="marker-div-icon" data-geo-location-id="${destination.geo_location.local_id}"><img src="${pin}"/><span>${title}</span></div>`
+                            })
+                        }).addTo(map);
+
+                        let destinationLatLng = [
+                            parseFloat(destination.geo_location.address.lat),
+                            parseFloat(destination.geo_location.address.lng),
+                        ];
+
+                        if (new Date(destination.start_date) <= new Date(mainDestination.start_date)) {
+                            destinationsBeforeMainDestinations.push(destinationLatLng);
+                        } else {
+                            let minDist = Number.MAX_VALUE;
+                            let minDistLatLng;
+                            for (let i = 0; i < polylineData.length; i++) {
+                                let latLngOnMainDestination = polylineData[i];
+                                let distance = L.latLng(destinationLatLng).distanceTo(latLngOnMainDestination);
+                                if (distance < minDist) {
+                                    minDist = distance;
+                                    minDistLatLng = latLngOnMainDestination;
+                                }
+                            }
+
+                            L.Routing.control({
+                                waypoints: [destinationLatLng, minDistLatLng],
+                                createMarker: function () {
+                                    return null;
+                                },
+                                fitSelectedRoutes: false,
+                            }).addTo(map);
+                            $(".leaflet-routing-container").hide();
+                        } // info: d1 == d2 should never happen
                     }
                 }
             );
+
+            L.Routing.control({
+                waypoints: destinationsBeforeMainDestinations,
+                createMarker: function () {
+                    return null;
+                },
+                fitSelectedRoutes: false,
+            }).addTo(map);
+            $(".leaflet-routing-container").hide();
+
+            map.fitBounds(polyline.getBounds());
+
+        });
+        map.setZoom(2);
+
+        $('.marker-div-icon').mouseenter(function() {
+           $('.destination-card[data-geo-location-id="' + $(this).attr('data-geo-location-id') + '"]').attr('data-highlighted', true);
+        });
+
+        $('.marker-div-icon').mouseleave(function() {
+            $('.destination-card[data-geo-location-id="' + $(this).attr('data-geo-location-id') + '"]').attr('data-highlighted', false);
         });
     });
 </script>
+

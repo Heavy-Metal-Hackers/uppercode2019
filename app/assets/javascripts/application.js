@@ -13,4 +13,5 @@
 //= require utils
 //= require jquery
 //= require leaflet
+//= require leaflet-routing-machine
 //= require_tree .
