@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191018193200) do
+ActiveRecord::Schema.define(version: 20191018222900) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,6 +47,14 @@ ActiveRecord::Schema.define(version: 20191018193200) do
   add_index "categories", ["category_set_id"], name: "index_categories_on_category_set_id", using: :btree
   add_index "categories", ["key"], name: "index_categories_on_key", unique: true, using: :btree
   add_index "categories", ["parent_category_id"], name: "index_categories_on_parent_category_id", using: :btree
+
+  create_table "categories_geo_locations", id: false, force: :cascade do |t|
+    t.integer "geo_location_id", null: false
+    t.integer "category_id",     null: false
+  end
+
+  add_index "categories_geo_locations", ["category_id", "geo_location_id"], name: "index_category_to_geo_location", using: :btree
+  add_index "categories_geo_locations", ["geo_location_id", "category_id"], name: "index_geo_location_to_category", using: :btree
 
   create_table "category_sets", force: :cascade do |t|
     t.string   "category_type"
@@ -130,9 +138,10 @@ ActiveRecord::Schema.define(version: 20191018193200) do
     t.integer  "geo_location_id"
     t.integer  "trip_id"
     t.datetime "date"
+    t.datetime "planned_end_date"
     t.boolean  "active"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
   add_index "trip_destinations", ["geo_location_id"], name: "index_trip_destinations_on_geo_location_id", using: :btree

@@ -5,7 +5,8 @@ class CreateTripDestinations < ActiveRecord::Migration
       t.references :trip, index: true
 
       t.datetime :date
-      
+      t.datetime :planned_end_date
+
       t.boolean :active
 
       t.timestamps null: false

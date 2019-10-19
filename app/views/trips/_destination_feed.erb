@@ -10,92 +10,44 @@
       <%# klick auf marker hebt item auf liste hervor %>
       <%# pop animation car into collapsed list %>
       <%# query param for location on main page %>
-      <%# wertter info mit alternativangeboten %>
+      <%# alternativangebote bei schlechtem wetter %>
       <%# besuchszeiten %>
 
-      <% current_guest.trips.first.destinations.order(date: :asc).each do |destination| %>
-          <% if last_iterated_date.blank? || last_iterated_date != destination.start_date.to_date.to_s %>
+      <%# TODO iterate over trip.start_date..trip.end_date and chck if hotel is on that day, then show again %>
 
-              <%# TODO check which suggestions will fit %>
+      <% trip = current_guest.trips.first %>
 
-
-              <% unless last_iterated_date.blank? %>
-                  </div>
-                </div>
-              <% end %>
-              <% last_iterated_date = destination.start_date.to_date.to_s %>
-              <div class="destination-day">
-                <div class="destination-date">
-                  <div class="destination-week-day"><%= destination.week_day %> 01.08</div>
-                  <%= render 'trip_destinations/weather', :@destination => destination %>
-                </div>
-                <div class="destinations">
-          <% end %>
-          <%= render 'trip_destinations/card',
-                     id: destination.id,
-                     type: destination.geo_location.type,
-                     time: "#{destination.start_date.strftime("%H:%M")} - #{destination.end_date.strftime("%H:%M")}",
-                     title: destination.geo_location.name,
-                     image: destination.geo_location.image,
-                     details: destination.geo_location.categories.limit(2).map {|category| category.name}.join(","),
-                     address: destination.geo_location.address,
-                     actions: [] # TODO
-          %>
+      <% (trip.start_date.to_date..trip.end_date.to_date).each do |date| %>
+        <div class="destination-day">
+          <div class="destination-date">
+            <div class="destination-week-day"><%= date.strftime('%A') %> <%= date.strftime("%d.%m") %></div>
+            <%# TODO first destinations weather  %>
+            <% destinations = trip.destinations_of_date(date).sort_by{|destination| destination.start_date} %>
+            <%# TODO empty state if nothing planned %>
+            <%= render 'trip_destinations/weather', :@destination => destinations.first unless destinations.blank? %>
+          </div>
+          <div class="destinations">
+            <% destinations.each do |destination| %>
+                <%= render 'trip_destinations/card',
+                           id: destination.id,
+                           type: destination.geo_location.type,
+                           time: "#{destination.start_date.strftime("%H:%M")} - #{destination.end_date.strftime("%H:%M")}",
+                           title: destination.geo_location.name,
+                           image: destination.geo_location.image,
+                           details: destination.geo_location.categories.limit(2).map {|category| category.name}.join(", "),
+                           address: destination.geo_location.address,
+                           actions: [] # TODO
+                %>
+            <% end %>
+            <% trip.suggestions_of_date(date).each do |suggestion| %>
+              <%= render 'trip_destinations/suggestion_card',
+                         title: suggestion[:title],
+                         details: suggestion[:details],
+                         type: suggestion[:type],
+                         link: suggestion[:link]
+              %>
+            <% end %>
+          </div>
+        </div>
       <% end %>
-    </div>
-  </div>
-
-
-
-  <div class="destination-day">
-    <div class="destinations">
-
-      <%= render 'trip_destinations/card',
-                 id: 1,
-                 type: 'hotel',
-                 time: 'Check-In 12:00',
-                 title: 'Hotel Seeblick',
-                 image: 'https://media.tourdata.at/exp/sommer/responsiveTeaserBoxImg/orteinformation/430000877.png',
-                 details: 'Unterkunft, Halbpension',
-                 address: 'Bergstraße 62, 2131 Linzdorf',
-                 actions: []
-      %>
-      <%= render 'trip_destinations/card',
-                 id: 2,
-                 type: 'food',
-                 time: '16:00 - 18:00',
-                 title: 'Zum goldenen Adler',
-                 details: 'Gaststätte, Rustikal',
-                 address: 'Zur Talsperre 4, 2131 Linzdorf',
-                 actions: [{
-                               title: 'Reservierung notwendig',
-                               link: 'https://www.oberoesterreich.at/tourdata-listen/gastronomie/alle-gastronomiebetriebe/oesterreich-gastronomie/detail/160077/cuisino-das-casino-restaurant.html'
-                           }]
-      %>
-      <%= render 'trip_destinations/suggestion_card',
-                 title: 'Freizeit und Aktivitäten',
-                 details: 'Sie haben noch keine Aktivitäten geplant',
-                 type: 'activity'
-      %>
-    </div>
-  </div>
-  <div class="destination-day">
-    <div class="destination-date">Dienstag 02.08</div>
-    <div class="destinations">
-      <%= render 'trip_destinations/card',
-                 id: 45,
-                 type: 'activity',
-                 time: '09:00 - 16:00',
-                 title: 'Waldsteig zum Steinberg',
-                 details: 'Aktivität, Wandern',
-                 address: 'Zur Talsperre 4, 2131 Linzdorf',
-                 actions: []
-      %>
-      <%= render 'trip_destinations/suggestion_card',
-                 title: 'Restaurant oder Gaststätte',
-                 details: 'Sie haben noch kein Mittagessen geplant',
-                 type: 'food'
-      %>
-    </div>
-  </div>
 </div>

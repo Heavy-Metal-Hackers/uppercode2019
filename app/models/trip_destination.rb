@@ -25,6 +25,7 @@ class TripDestination < ActiveRecord::Base
   end
 
   def end_date
+    return planned_end_date unless planned_end_date.blank?
     date + duration.minutes
   end
 

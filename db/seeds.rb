@@ -234,7 +234,8 @@ trip_record = Trip.find_or_create_by(
     },
     {
         id: 150054,
-        date: Time.new(2019, 10, 25, 16, 0)
+        date: Time.new(2019, 10, 25, 16, 0),
+        planned_end_date: Time.new(2019, 10, 27, 14, 0)
     },
     {
         id: 430007394,
@@ -253,6 +254,7 @@ trip_record = Trip.find_or_create_by(
       geo_location: GeoLocation.where(active: true).find_by_local_id(destination[:id]),
       trip: trip_record,
       date: destination[:date],
+      planned_end_date: destination[:planned_end_date],
       active: true
   )
 end
