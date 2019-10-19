@@ -41,8 +41,8 @@
       <ec:link rel="imagegallery" url="https://media.tourdata.at/file/original/55869466c538de8725c661e3b0320252.jpg" type="image/jpeg" author="" source="GH Post" prio="0">80_gasthof-post-unsere-zimmer</ec:link>
       <ec:link rel="imagegallery" url="https://media.tourdata.at/file/original/0acb465cc0394dc43d9a8c7e4fcff40b.jpg" type="image/jpeg" author="" source="GH Post" prio="0">90_gasthof-post-unsere-zimmer</ec:link>
       <ec:link rel="qrcode" url="http://ecmaps.de/qr.ashx?e=austria&amp;size=200&amp;data=http%3A%2F%2Fgo.ecmaps.de%2Fgo.ashx%3Fe=austria%26h=7130428F5CD36C6190742D981B1AB5D8%26t=3" />
-      <geo:lat>48.431962677980906</geo:lat>
-      <geo:long>14.30085754385801</geo:long>
+      <geo:lat>48.4659817</geo:lat>
+      <geo:long>14.271083</geo:long>
       <georss:elev>824</georss:elev>
       <source url="https://datenwartung.tourdata.at/">TOURDATA</source>
       <ec:source_image>https://datenwartung.tourdata.at/images/tourdatalogo.png</ec:source_image>

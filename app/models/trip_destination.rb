@@ -32,6 +32,28 @@ class TripDestination < ActiveRecord::Base
     date.strftime('%A')
   end
 
+  # TODO in production, use real weather api
+  def random_weather_pick
+    Rails.cache.fetch("random_weather_pick.#{id}", :expires_in => 10.minutes) do
+      rand(1..5)
+    end
+  end
+
+  # TODO in production, use real weather api
+  def day_temperature
+    rand(14..25) - random_weather_pick
+  end
+
+  # TODO in production, use real weather api
+  def night_temperature
+    rand(6..13) - random_weather_pick
+  end
+
+  # TODO in production, use real weather api
+  def weather_type
+    %w(sunny sunny partly_cloudy rain_s_cloudy rain thunderstorms)[random_weather_pick]
+  end
+
   def set_inactive(user = nil)
     self.active = false
     self.update_user = user

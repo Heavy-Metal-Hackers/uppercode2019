@@ -5,11 +5,13 @@
       <%# .group_by(&:capitalize) %>
       <%# TODO group, calculate suggestions (method of trip?), %>
       <%# calculate nachhaltigkeitsideen, marker restaurant bissl verschieben, %>
-      <%# klick auf item hebt marker auf karte hervor und zeigt submenü mit actions %>#
+      <%# klick auf item hebt marker auf karte hervor und zeigt submenü mit actions %>
       <%# klick auf item aktualisiert iframe im background %>
       <%# klick auf marker hebt item auf liste hervor %>
       <%# pop animation car into collapsed list %>
       <%# query param for location on main page %>
+      <%# wertter info mit alternativangeboten %>
+      <%# besuchszeiten %>
 
       <% current_guest.trips.first.destinations.order(date: :asc).each do |destination| %>
           <% if last_iterated_date.blank? || last_iterated_date != destination.start_date.to_date.to_s %>
@@ -23,7 +25,10 @@
               <% end %>
               <% last_iterated_date = destination.start_date.to_date.to_s %>
               <div class="destination-day">
-                <div class="destination-date"><%= destination.week_day %> 01.08</div>
+                <div class="destination-date">
+                  <div class="destination-week-day"><%= destination.week_day %> 01.08</div>
+                  <%= render 'trip_destinations/weather', :@destination => destination %>
+                </div>
                 <div class="destinations">
           <% end %>
           <%= render 'trip_destinations/card',
